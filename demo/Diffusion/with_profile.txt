@@ -1,0 +1,907 @@
+2023-04-26 06:30:50.801461112 [I:onnxruntime:, inference_session.cc:271 operator()] Flush-to-zero and denormal-as-zero are off
+2023-04-26 06:30:50.801521273 [I:onnxruntime:, inference_session.cc:279 ConstructorCommon] Creating and using per session threadpools since use_per_session_threads_ is true
+2023-04-26 06:30:50.801530000 [I:onnxruntime:, inference_session.cc:297 ConstructorCommon] Dynamic block base set to 0
+2023-04-26 06:30:50.802826315 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054783, index: 0, mask: {1, }
+2023-04-26 06:30:50.802889247 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054784, index: 1, mask: {2, }
+2023-04-26 06:30:50.802976575 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054785, index: 2, mask: {3, }
+2023-04-26 06:30:50.803196163 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054786, index: 3, mask: {4, }
+2023-04-26 06:30:50.803467553 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054787, index: 4, mask: {5, }
+2023-04-26 06:30:50.803552390 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054788, index: 5, mask: {6, }
+2023-04-26 06:30:50.803649180 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054789, index: 6, mask: {7, }
+2023-04-26 06:30:50.803782744 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054791, index: 8, mask: {9, }
+2023-04-26 06:30:50.803819592 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054790, index: 7, mask: {8, }
+2023-04-26 06:30:50.803821886 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054792, index: 9, mask: {10, }
+2023-04-26 06:30:50.804081955 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054793, index: 10, mask: {11, }
+2023-04-26 06:30:50.804209161 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054796, index: 13, mask: {14, }
+2023-04-26 06:30:50.804232084 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054794, index: 11, mask: {12, }
+2023-04-26 06:30:50.804189030 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054795, index: 12, mask: {13, }
+2023-04-26 06:30:50.804373818 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054797, index: 14, mask: {15, }
+2023-04-26 06:30:50.804498269 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054799, index: 16, mask: {17, }
+2023-04-26 06:30:50.804498239 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054798, index: 15, mask: {16, }
+2023-04-26 06:30:50.804591568 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054800, index: 17, mask: {18, }
+2023-04-26 06:30:50.804774749 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054801, index: 18, mask: {19, }
+2023-04-26 06:30:50.804919683 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054803, index: 20, mask: {21, }
+2023-04-26 06:30:50.804919668 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054802, index: 19, mask: {20, }
+2023-04-26 06:30:50.804979434 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054804, index: 21, mask: {22, }
+2023-04-26 06:30:50.805002136 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054805, index: 22, mask: {23, }
+2023-04-26 06:30:50.805310029 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054807, index: 24, mask: {25, }
+2023-04-26 06:30:50.805154239 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054806, index: 23, mask: {24, }
+2023-04-26 06:30:50.805344778 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054808, index: 25, mask: {26, }
+2023-04-26 06:30:50.805393460 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054809, index: 26, mask: {27, }
+2023-04-26 06:30:50.805519673 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054810, index: 27, mask: {28, }
+2023-04-26 06:30:50.805545276 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054811, index: 28, mask: {29, }
+2023-04-26 06:30:50.805580462 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054812, index: 29, mask: {30, }
+2023-04-26 06:30:50.805680533 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054813, index: 30, mask: {31, }
+2023-04-26 06:30:50.805783448 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054814, index: 31, mask: {32, }
+2023-04-26 06:30:50.806063305 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054816, index: 33, mask: {34, }
+2023-04-26 06:30:50.806020590 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054815, index: 32, mask: {33, }
+2023-04-26 06:30:50.806220241 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054817, index: 34, mask: {35, }
+2023-04-26 06:30:50.806288914 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054818, index: 35, mask: {36, }
+2023-04-26 06:30:50.806361434 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054820, index: 37, mask: {38, }
+2023-04-26 06:30:50.806357487 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054819, index: 36, mask: {37, }
+2023-04-26 06:30:50.806762671 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054823, index: 40, mask: {41, }
+2023-04-26 06:30:50.806675188 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054821, index: 38, mask: {39, }
+2023-04-26 06:30:50.806981662 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054822, index: 39, mask: {40, }
+2023-04-26 06:30:50.807051156 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054824, index: 41, mask: {42, }
+2023-04-26 06:30:50.807095344 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054825, index: 42, mask: {43, }
+2023-04-26 06:30:50.807254635 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054827, index: 44, mask: {45, }
+2023-04-26 06:30:50.807208559 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054826, index: 43, mask: {44, }
+2023-04-26 06:30:50.807217145 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054828, index: 45, mask: {46, }
+2023-04-26 06:30:50.807380218 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054829, index: 46, mask: {47, }
+2023-04-26 06:30:50.807473727 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054831, index: 48, mask: {49, }
+2023-04-26 06:30:50.807473732 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054830, index: 47, mask: {48, }
+2023-04-26 06:30:50.807497872 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054832, index: 49, mask: {50, }
+2023-04-26 06:30:50.807652795 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054833, index: 50, mask: {51, }
+2023-04-26 06:30:50.807747511 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054835, index: 52, mask: {53, }
+2023-04-26 06:30:50.807769237 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054834, index: 51, mask: {52, }
+2023-04-26 06:30:50.807999290 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054836, index: 53, mask: {54, }
+2023-04-26 06:30:50.808065999 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054837, index: 54, mask: {55, }
+2023-04-26 06:30:50.808124102 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054838, index: 55, mask: {56, }
+2023-04-26 06:30:50.808181859 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054839, index: 56, mask: {57, }
+2023-04-26 06:30:50.808197909 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054840, index: 57, mask: {58, }
+2023-04-26 06:30:50.808258677 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054841, index: 58, mask: {59, }
+2023-04-26 06:30:50.808383234 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054842, index: 59, mask: {60, }
+2023-04-26 06:30:50.808618732 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054843, index: 60, mask: {61, }
+2023-04-26 06:30:50.808633739 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054844, index: 61, mask: {62, }
+2023-04-26 06:30:50.808712076 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054845, index: 62, mask: {63, }
+2023-04-26 06:30:50.808788307 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054846, index: 63, mask: {64, }
+2023-04-26 06:30:50.808816109 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054847, index: 64, mask: {65, }
+2023-04-26 06:30:50.808851475 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054848, index: 65, mask: {66, }
+2023-04-26 06:30:50.808922357 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054849, index: 66, mask: {67, }
+2023-04-26 06:30:50.809172491 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054850, index: 67, mask: {68, }
+2023-04-26 06:30:50.809233185 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054851, index: 68, mask: {69, }
+2023-04-26 06:30:50.809465787 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054852, index: 69, mask: {70, }
+2023-04-26 06:30:50.809516682 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054853, index: 70, mask: {71, }
+2023-04-26 06:30:50.809598498 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054854, index: 71, mask: {72, }
+2023-04-26 06:30:50.809619148 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054855, index: 72, mask: {73, }
+2023-04-26 06:30:50.809646297 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054856, index: 73, mask: {74, }
+2023-04-26 06:30:50.809750391 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054857, index: 74, mask: {75, }
+2023-04-26 06:30:50.809758971 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054858, index: 75, mask: {76, }
+2023-04-26 06:30:50.809851389 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054859, index: 76, mask: {77, }
+2023-04-26 06:30:50.809935365 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054860, index: 77, mask: {78, }
+2023-04-26 06:30:50.809995808 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054861, index: 78, mask: {79, }
+2023-04-26 06:30:50.810056049 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054862, index: 79, mask: {80, }
+2023-04-26 06:30:50.810059050 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054863, index: 80, mask: {81, }
+2023-04-26 06:30:50.810266426 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054864, index: 81, mask: {82, }
+2023-04-26 06:30:50.810353919 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054865, index: 82, mask: {83, }
+2023-04-26 06:30:50.810475786 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054867, index: 84, mask: {85, }
+2023-04-26 06:30:50.810493478 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054866, index: 83, mask: {84, }
+2023-04-26 06:30:50.810579959 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054868, index: 85, mask: {86, }
+2023-04-26 06:30:50.810627793 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054869, index: 86, mask: {87, }
+2023-04-26 06:30:50.810726882 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054870, index: 87, mask: {88, }
+2023-04-26 06:30:50.810938816 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054871, index: 88, mask: {89, }
+2023-04-26 06:30:50.810964804 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054872, index: 89, mask: {90, }
+2023-04-26 06:30:50.811071453 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054873, index: 90, mask: {91, }
+2023-04-26 06:30:50.811116241 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054874, index: 91, mask: {92, }
+2023-04-26 06:30:50.811125759 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054875, index: 92, mask: {93, }
+2023-04-26 06:30:50.811173423 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054876, index: 93, mask: {94, }
+2023-04-26 06:30:50.829980896 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054877, index: 94, mask: {95, }
+2023-04-26 06:30:50.952683216 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:63 CreateTensorRTCustomOpDomainList] [TensorRT EP] Getting all registered TRT plugins from TRT plugin registry ...
+2023-04-26 06:30:50.952880282 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CaskDeconvShaderWeightsTransformerPlugin, version : 1
+2023-04-26 06:30:50.952895391 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CaskConvShaderWeightsTransformerPlugin, version : 1
+2023-04-26 06:30:50.952900891 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RNNTEncoderPlugin, version : 1
+2023-04-26 06:30:50.952905910 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SmallTileGEMM_TRT, version : 1
+2023-04-26 06:30:50.952910960 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] DLRM_BOTTOM_MLP_TRT, version : 1
+2023-04-26 06:30:50.952916199 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomQKVToContextPluginDynamic, version : 1
+2023-04-26 06:30:50.952921098 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomQKVToContextPluginDynamic, version : 2
+2023-04-26 06:30:50.952935675 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomQKVToContextPluginDynamic, version : 3
+2023-04-26 06:30:50.952940655 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomSkipLayerNormPluginDynamic, version : 1
+2023-04-26 06:30:50.952945263 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomSkipLayerNormPluginDynamic, version : 2
+2023-04-26 06:30:50.952950002 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomSkipLayerNormPluginDynamic, version : 3
+2023-04-26 06:30:50.952954570 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomSkipLayerNormPluginDynamic, version : 4
+2023-04-26 06:30:50.952959530 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SingleStepLSTMPlugin, version : 1
+2023-04-26 06:30:50.952964539 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2FullFusion_TRT, version : 1
+2023-04-26 06:30:50.952969538 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2Br2bBr2c_TRT, version : 1
+2023-04-26 06:30:50.952974257 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2Br2bBr2c_TRT, version : 2
+2023-04-26 06:30:50.952979026 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2Br1Br2c_TRT, version : 1
+2023-04-26 06:30:50.952983835 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2Br1Br2c_TRT, version : 2
+2023-04-26 06:30:50.952988393 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GroupNormalizationPlugin, version : 1
+2023-04-26 06:30:50.952993102 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomGeluPluginDynamic, version : 1
+2023-04-26 06:30:50.952997991 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomFCPluginDynamic, version : 1
+2023-04-26 06:30:50.953003712 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomEmbLayerNormPluginDynamic, version : 2
+2023-04-26 06:30:50.953008531 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomEmbLayerNormPluginDynamic, version : 3
+2023-04-26 06:30:50.953013210 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomEmbLayerNormPluginDynamic, version : 1
+2023-04-26 06:30:50.953017808 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] DisentangledAttention_TRT, version : 1
+2023-04-26 06:30:50.953022377 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] BatchedNMSDynamic_TRT, version : 1
+2023-04-26 06:30:50.953027446 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] BatchedNMS_TRT, version : 1
+2023-04-26 06:30:50.953032195 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] BatchTilePlugin_TRT, version : 1
+2023-04-26 06:30:50.953036854 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Clip_TRT, version : 1
+2023-04-26 06:30:50.953043286 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CoordConvAC, version : 1
+2023-04-26 06:30:50.953047954 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CropAndResizeDynamic, version : 1
+2023-04-26 06:30:50.953052763 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CropAndResize, version : 1
+2023-04-26 06:30:50.953057462 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] DecodeBbox3DPlugin, version : 1
+2023-04-26 06:30:50.953062181 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] DetectionLayer_TRT, version : 1
+2023-04-26 06:30:50.953066829 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] EfficientNMS_Explicit_TF_TRT, version : 1
+2023-04-26 06:30:50.953071538 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] EfficientNMS_Implicit_TF_TRT, version : 1
+2023-04-26 06:30:50.953076237 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] EfficientNMS_ONNX_TRT, version : 1
+2023-04-26 06:30:50.953080976 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] EfficientNMS_TRT, version : 1
+2023-04-26 06:30:50.953085674 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] FlattenConcat_TRT, version : 1
+2023-04-26 06:30:50.953091094 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] fMHA_V2, version : 1
+2023-04-26 06:30:50.953095863 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] fMHCA, version : 1
+2023-04-26 06:30:50.953100762 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GenerateDetection_TRT, version : 1
+2023-04-26 06:30:50.953105501 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GridAnchor_TRT, version : 1
+2023-04-26 06:30:50.953110140 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GridAnchorRect_TRT, version : 1
+2023-04-26 06:30:50.953114869 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GroupNorm, version : 1
+2023-04-26 06:30:50.953119547 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] InstanceNormalization_TRT, version : 1
+2023-04-26 06:30:50.953124276 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] InstanceNormalization_TRT, version : 2
+2023-04-26 06:30:50.953128865 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] LayerNorm, version : 1
+2023-04-26 06:30:50.953133453 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] LReLU_TRT, version : 1
+2023-04-26 06:30:50.953138132 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ModulatedDeformConv2d, version : 1
+2023-04-26 06:30:50.953142800 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] MultilevelCropAndResize_TRT, version : 1
+2023-04-26 06:30:50.953147519 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] MultilevelProposeROI_TRT, version : 1
+2023-04-26 06:30:50.953153841 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] MultiscaleDeformableAttnPlugin_TRT, version : 1
+2023-04-26 06:30:50.953158590 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] NMSDynamic_TRT, version : 1
+2023-04-26 06:30:50.953163209 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] NMS_TRT, version : 1
+2023-04-26 06:30:50.953167937 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Normalize_TRT, version : 1
+2023-04-26 06:30:50.953172536 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] PillarScatterPlugin, version : 1
+2023-04-26 06:30:50.953177184 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] PriorBox_TRT, version : 1
+2023-04-26 06:30:50.953181803 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ProposalDynamic, version : 1
+2023-04-26 06:30:50.953186442 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ProposalLayer_TRT, version : 1
+2023-04-26 06:30:50.953191070 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Proposal, version : 1
+2023-04-26 06:30:50.953195649 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] PyramidROIAlign_TRT, version : 1
+2023-04-26 06:30:50.953200207 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Region_TRT, version : 1
+2023-04-26 06:30:50.953204936 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Reorg_TRT, version : 1
+2023-04-26 06:30:50.953209535 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ResizeNearest_TRT, version : 1
+2023-04-26 06:30:50.953214203 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ROIAlign_TRT, version : 1
+2023-04-26 06:30:50.953218772 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RPROI_TRT, version : 1
+2023-04-26 06:30:50.953223310 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ScatterND, version : 1
+2023-04-26 06:30:50.953227879 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SeqLen2Spatial, version : 1
+2023-04-26 06:30:50.953232497 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SpecialSlice_TRT, version : 1
+2023-04-26 06:30:50.953238368 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SplitGeLU, version : 1
+2023-04-26 06:30:50.953242957 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Split, version : 1
+2023-04-26 06:30:50.953247586 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] VoxelGeneratorPlugin, version : 1
+2023-04-26 06:30:50.992691224 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] input_ids:1x77
+2023-04-26 06:30:50.992723735 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] input_ids
+2023-04-26 06:30:50.992736188 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 1, 77, 
+2023-04-26 06:30:50.992748270 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] input_ids:16x77
+2023-04-26 06:30:50.992754582 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] input_ids
+2023-04-26 06:30:50.992759391 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 16, 77, 
+2023-04-26 06:30:50.992764270 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] input_ids:1x77
+2023-04-26 06:30:50.992769920 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] input_ids
+2023-04-26 06:30:50.992774659 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 1, 77, 
+2023-04-26 06:30:50.992792482 [V:onnxruntime:Default, tensorrt_execution_provider.cc:919 TensorrtExecutionProvider] [TensorRT EP] TensorRT provider options: device_id: 0, trt_max_partition_iterations: 1000, trt_min_subgraph_size: 1, trt_max_workspace_size: 1073741824, trt_fp16_enable: 1, trt_int8_enable: 0, trt_int8_calibration_cache_name: , int8_calibration_cache_available: 0, trt_int8_use_native_tensorrt_calibration_table: 0, trt_dla_enable: 0, trt_dla_core: 0, trt_dump_subgraphs: 0, trt_engine_cache_enable: 1, trt_cache_path: ./onnx_1.5/clip_ort_engine_16_64_64_768_v1, trt_engine_decryption_enable: 0, trt_engine_decryption_lib_path: , trt_force_sequential_engine_build: 0, trt_context_memory_sharing_enable: 0, trt_layer_norm_fp32_fallback: 0, trt_build_heuristics_enable: 0, trt_sparsity_enable: 0, trt_builder_optimization_level: 2, trt_auxiliary_streams: -1, trt_tactic_sources: , trt_profile_min_shapes: input_ids:1x77, trt_profile_max_shapes: input_ids:16x77, trt_profile_opt_shapes: input_ids:1x77
+2023-04-26 06:30:50.997111915 [I:onnxruntime:, inference_session.cc:1306 Initialize] Initializing session.
+2023-04-26 06:30:50.997125620 [I:onnxruntime:, inference_session.cc:1343 Initialize] Adding default CPU execution provider.
+2023-04-26 06:30:50.997141339 [I:onnxruntime:Default, bfc_arena.cc:27 BFCArena] Creating BFCArena for Cuda with following configs: initial_chunk_size_bytes: 1048576 max_dead_bytes_per_chunk: 134217728 initial_growth_chunk_size_bytes: 2097152 memory limit: 18446744073709551615 arena_extend_strategy: 0
+2023-04-26 06:30:50.997146820 [V:onnxruntime:Default, bfc_arena.cc:63 BFCArena] Creating 21 bins of max chunk size 256 to 268435456
+2023-04-26 06:30:50.997158371 [I:onnxruntime:Default, bfc_arena.cc:27 BFCArena] Creating BFCArena for CudaPinned with following configs: initial_chunk_size_bytes: 1048576 max_dead_bytes_per_chunk: 134217728 initial_growth_chunk_size_bytes: 2097152 memory limit: 18446744073709551615 arena_extend_strategy: 0
+2023-04-26 06:30:50.997162709 [V:onnxruntime:Default, bfc_arena.cc:63 BFCArena] Creating 21 bins of max chunk size 256 to 268435456
+2023-04-26 06:30:50.997168019 [I:onnxruntime:Default, bfc_arena.cc:27 BFCArena] Creating BFCArena for CUDA_CPU with following configs: initial_chunk_size_bytes: 1048576 max_dead_bytes_per_chunk: 134217728 initial_growth_chunk_size_bytes: 2097152 memory limit: 18446744073709551615 arena_extend_strategy: 0
+2023-04-26 06:30:50.997172377 [V:onnxruntime:Default, bfc_arena.cc:63 BFCArena] Creating 21 bins of max chunk size 256 to 268435456
+2023-04-26 06:30:50.997182436 [I:onnxruntime:Default, bfc_arena.cc:27 BFCArena] Creating BFCArena for Cpu with following configs: initial_chunk_size_bytes: 1048576 max_dead_bytes_per_chunk: 134217728 initial_growth_chunk_size_bytes: 2097152 memory limit: 18446744073709551615 arena_extend_strategy: 0
+2023-04-26 06:30:50.997186784 [V:onnxruntime:Default, bfc_arena.cc:63 BFCArena] Creating 21 bins of max chunk size 256 to 268435456
+2023-04-26 06:30:50.997206961 [I:onnxruntime:, session_state.cc:98 SetupAllocators] Allocator already registered for OrtMemoryInfo:[name:Cuda id:0 OrtMemType:0 OrtAllocatorType:1 Device:[DeviceType:1 MemoryType:0 DeviceId:0]]. Ignoring allocator from CUDAExecutionProvider
+2023-04-26 06:30:50.997215728 [I:onnxruntime:, session_state.cc:98 SetupAllocators] Allocator already registered for OrtMemoryInfo:[name:CudaPinned id:0 OrtMemType:-1 OrtAllocatorType:1 Device:[DeviceType:0 MemoryType:1 DeviceId:0]]. Ignoring allocator from CUDAExecutionProvider
+2023-04-26 06:30:50.997221278 [I:onnxruntime:, session_state.cc:98 SetupAllocators] Allocator already registered for OrtMemoryInfo:[name:CUDA_CPU id:0 OrtMemType:-2 OrtAllocatorType:1 Device:[DeviceType:0 MemoryType:0 DeviceId:0]]. Ignoring allocator from CUDAExecutionProvider
+2023-04-26 06:30:51.009223717 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 512
+2023-04-26 06:30:51.021003443 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /text_model/Reshape_output_0
+2023-04-26 06:30:51.021299624 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 1
+2023-04-26 06:30:51.027998070 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.034195585 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.035718587 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.041925759 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.043435918 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.049595833 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.051118003 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.057297083 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.058813634 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.064970123 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.066494437 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.072665873 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.074176082 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.080317933 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.081821178 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.087969271 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.089459732 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:30:51.095623785 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:30:51.096539228 [I:onnxruntime:Default, tensorrt_execution_provider_utils.h:236 TRTGenerateId] [TensorRT EP] Model name is clip_ort.onnx
+2023-04-26 06:30:57.414329840 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:30:57 WARNING] onnx2trt_utils.cpp:374: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+2023-04-26 06:30:57.431772316 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:30:57 WARNING] onnx2trt_utils.cpp:70: TensorRT is using FLOAT32 precision to run an INT32 ArgMax / ArgMin. Rounding errors may occur for large integer values
+2023-04-26 06:30:57.431804956 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:30:57 WARNING] Tensor DataType is determined at build time for tensors not marked as input or output.
+2023-04-26 06:30:57.742835090 [I:onnxruntime:Default, tensorrt_execution_provider.cc:1214 GetSubGraph] [TensorRT EP] TensorRT subgraph MetaDef name TRTKernel_graph_torch_jit_5800028860410783635_0
+2023-04-26 06:30:57.743534471 [I:onnxruntime:Default, tensorrt_execution_provider.cc:1214 GetSubGraph] [TensorRT EP] TensorRT subgraph MetaDef name TRTKernel_graph_torch_jit_5800028860410783635_0
+2023-04-26 06:30:57.743599612 [I:onnxruntime:Default, tensorrt_execution_provider.cc:1677 GetCapability] [TensorRT EP] Whole graph will run on TensorRT execution provider
+2023-04-26 06:31:03.494748581 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:03 WARNING] onnx2trt_utils.cpp:374: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+2023-04-26 06:31:03.511745509 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:03 WARNING] onnx2trt_utils.cpp:70: TensorRT is using FLOAT32 precision to run an INT32 ArgMax / ArgMin. Rounding errors may occur for large integer values
+2023-04-26 06:31:03.511780514 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:03 WARNING] Tensor DataType is determined at build time for tensors not marked as input or output.
+2023-04-26 06:31:03.512072387 [V:onnxruntime:Default, tensorrt_execution_provider.cc:395 ApplyProfileShapesFromProviderOptions] [TensorRT EP] Begin to apply profile shapes ...
+2023-04-26 06:31:03.512080732 [V:onnxruntime:Default, tensorrt_execution_provider.cc:396 ApplyProfileShapesFromProviderOptions] [TensorRT EP] Input tensor name is 'input_ids', number of profiles found is 1
+2023-04-26 06:31:03.512741551 [V:onnxruntime:Default, tensorrt_execution_provider.cc:431 ApplyProfileShapesFromProviderOptions] [TensorRT EP] number of dimension of this execution tensor is 2
+2023-04-26 06:31:03.512748234 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[0] is 1
+2023-04-26 06:31:03.512752972 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[0] is 16
+2023-04-26 06:31:03.512757481 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[0] is 1
+2023-04-26 06:31:03.512761899 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[1] is 77
+2023-04-26 06:31:03.512766137 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[1] is 77
+2023-04-26 06:31:03.512770344 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[1] is 77
+2023-04-26 06:31:03.517649878 [V:onnxruntime:Default, tensorrt_execution_provider.cc:1863 Compile] [TensorRT EP] FP16 mode is enabled
+2023-04-26 06:31:33.836065385 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:33 WARNING] TensorRT encountered issues when converting weights between types and that could affect accuracy.
+2023-04-26 06:31:33.836119977 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:33 WARNING] If this is not the desired behavior, please modify the weights or retrain with regularization to adjust the magnitude of the weights.
+2023-04-26 06:31:33.836126309 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:33 WARNING] Check verbose logs for the list of affected weights.
+2023-04-26 06:31:33.836133101 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:33 WARNING] - 112 weights are affected by this issue: Detected subnormal FP16 values.
+2023-04-26 06:31:33.836174919 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:33 WARNING] - 2 weights are affected by this issue: Detected values less than smallest positive FP16 subnormal value and converted them to the FP16 minimum subnormalized value.
+2023-04-26 06:31:33.836182763 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:33 WARNING] - 1 weights are affected by this issue: Detected finite FP32 values which would overflow in FP16 and converted them to the closest finite FP16 value.
+2023-04-26 06:31:33.957181520 [V:onnxruntime:Default, tensorrt_execution_provider.cc:2032 Compile] [TensorRT EP] Serialized engine ./onnx_1.5/clip_ort_engine_16_64_64_768_v1/TensorrtExecutionProvider_TRTKernel_graph_torch_jit_5800028860410783635_0_0_fp16.engine
+2023-04-26 06:31:34.120508285 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_0_1_3_token_115'. It is no longer used by any node.
+2023-04-26 06:31:34.120565371 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_10_0_1_1_token_114'. It is no longer used by any node.
+2023-04-26 06:31:34.120570711 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_0_1_2_token_113'. It is no longer used by any node.
+2023-04-26 06:31:34.120575079 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_1_1_4_token_111'. It is no longer used by any node.
+2023-04-26 06:31:34.120579367 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_1_1_3_token_110'. It is no longer used by any node.
+2023-04-26 06:31:34.120583685 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_0_1_1_token_109'. It is no longer used by any node.
+2023-04-26 06:31:34.120588003 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_1_1_2_token_108'. It is no longer used by any node.
+2023-04-26 06:31:34.120592321 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_1_1_1_token_107'. It is no longer used by any node.
+2023-04-26 06:31:34.120596459 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_0_1_0_token_104'. It is no longer used by any node.
+2023-04-26 06:31:34.120600757 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_1_2_0_token_103'. It is no longer used by any node.
+2023-04-26 06:31:34.120604875 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2258'. It is no longer used by any node.
+2023-04-26 06:31:34.120609162 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2308'. It is no longer used by any node.
+2023-04-26 06:31:34.120613330 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2474'. It is no longer used by any node.
+2023-04-26 06:31:34.120617418 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2298'. It is no longer used by any node.
+2023-04-26 06:31:34.120621546 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2331'. It is no longer used by any node.
+2023-04-26 06:31:34.120625633 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2503'. It is no longer used by any node.
+2023-04-26 06:31:34.120629731 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2293'. It is no longer used by any node.
+2023-04-26 06:31:34.120634470 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.final_layer_norm.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120638687 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2520'. It is no longer used by any node.
+2023-04-26 06:31:34.120642905 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2608'. It is no longer used by any node.
+2023-04-26 06:31:34.120647083 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2607'. It is no longer used by any node.
+2023-04-26 06:31:34.120663724 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2604'. It is no longer used by any node.
+2023-04-26 06:31:34.120667992 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2576'. It is no longer used by any node.
+2023-04-26 06:31:34.120672160 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2575'. It is no longer used by any node.
+2023-04-26 06:31:34.120676548 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2325'. It is no longer used by any node.
+2023-04-26 06:31:34.120680725 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2546'. It is no longer used by any node.
+2023-04-26 06:31:34.120685013 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.3.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120689251 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2543'. It is no longer used by any node.
+2023-04-26 06:31:34.120693429 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2610'. It is no longer used by any node.
+2023-04-26 06:31:34.120697567 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2535'. It is no longer used by any node.
+2023-04-26 06:31:34.120701695 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.11.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120705872 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2328'. It is no longer used by any node.
+2023-04-26 06:31:34.120710050 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2380'. It is no longer used by any node.
+2023-04-26 06:31:34.120714909 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2473'. It is no longer used by any node.
+2023-04-26 06:31:34.120719147 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2471'. It is no longer used by any node.
+2023-04-26 06:31:34.120723305 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2470'. It is no longer used by any node.
+2023-04-26 06:31:34.120727442 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2538'. It is no longer used by any node.
+2023-04-26 06:31:34.120731590 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2468'. It is no longer used by any node.
+2023-04-26 06:31:34.120735748 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2465'. It is no longer used by any node.
+2023-04-26 06:31:34.120739906 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2464'. It is no longer used by any node.
+2023-04-26 06:31:34.120744023 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2448'. It is no longer used by any node.
+2023-04-26 06:31:34.120748191 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_1_1_0_token_105'. It is no longer used by any node.
+2023-04-26 06:31:34.120752429 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2435'. It is no longer used by any node.
+2023-04-26 06:31:34.120756817 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2511'. It is no longer used by any node.
+2023-04-26 06:31:34.120762718 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2430'. It is no longer used by any node.
+2023-04-26 06:31:34.120766846 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_1_1_5_token_112'. It is no longer used by any node.
+2023-04-26 06:31:34.120771033 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2415'. It is no longer used by any node.
+2023-04-26 06:31:34.120775211 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.3.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120779359 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2413'. It is no longer used by any node.
+2023-04-26 06:31:34.120783496 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2260'. It is no longer used by any node.
+2023-04-26 06:31:34.120787624 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2196'. It is no longer used by any node.
+2023-04-26 06:31:34.120791802 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.final_layer_norm.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120795990 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2581'. It is no longer used by any node.
+2023-04-26 06:31:34.120800208 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.11.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120804345 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2334'. It is no longer used by any node.
+2023-04-26 06:31:34.120808463 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2343'. It is no longer used by any node.
+2023-04-26 06:31:34.120812591 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2534'. It is no longer used by any node.
+2023-04-26 06:31:34.120816698 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.0.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120820836 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2544'. It is no longer used by any node.
+2023-04-26 06:31:34.120825344 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.10.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120829532 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2518'. It is no longer used by any node.
+2023-04-26 06:31:34.120833710 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2404'. It is no longer used by any node.
+2023-04-26 06:31:34.120837928 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.embeddings.position_embedding.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120842156 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.8.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120846324 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_10_0_1_0_token_106'. It is no longer used by any node.
+2023-04-26 06:31:34.120851032 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2203'. It is no longer used by any node.
+2023-04-26 06:31:34.120855180 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.8.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120860971 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.7.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120865138 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.6.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120869516 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2429'. It is no longer used by any node.
+2023-04-26 06:31:34.120873634 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.6.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120877762 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.2.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120881899 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2590'. It is no longer used by any node.
+2023-04-26 06:31:34.120886218 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2394'. It is no longer used by any node.
+2023-04-26 06:31:34.120890395 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2509'. It is no longer used by any node.
+2023-04-26 06:31:34.120894493 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2193'. It is no longer used by any node.
+2023-04-26 06:31:34.120898601 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2398'. It is no longer used by any node.
+2023-04-26 06:31:34.120902768 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.3.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120906896 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2191'. It is no longer used by any node.
+2023-04-26 06:31:34.120911064 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2436'. It is no longer used by any node.
+2023-04-26 06:31:34.120915161 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2602'. It is no longer used by any node.
+2023-04-26 06:31:34.120919279 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.2.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120923367 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.9.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120927685 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.1.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120931883 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.5.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120936060 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.0.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120940378 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2360'. It is no longer used by any node.
+2023-04-26 06:31:34.120944506 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.11.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120948654 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2392'. It is no longer used by any node.
+2023-04-26 06:31:34.120954414 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2605'. It is no longer used by any node.
+2023-04-26 06:31:34.120958532 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2441'. It is no longer used by any node.
+2023-04-26 06:31:34.120962720 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2467'. It is no longer used by any node.
+2023-04-26 06:31:34.120966948 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.9.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120971075 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2194'. It is no longer used by any node.
+2023-04-26 06:31:34.120975293 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.1.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120979721 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2324'. It is no longer used by any node.
+2023-04-26 06:31:34.120983869 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.7.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120987987 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.5.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.120992175 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.5.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.120996332 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2537'. It is no longer used by any node.
+2023-04-26 06:31:34.121001532 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2368'. It is no longer used by any node.
+2023-04-26 06:31:34.121006772 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.5.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121011300 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2555'. It is no longer used by any node.
+2023-04-26 06:31:34.121015969 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.0.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121021109 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2567'. It is no longer used by any node.
+2023-04-26 06:31:34.121026228 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.embeddings.position_ids'. It is no longer used by any node.
+2023-04-26 06:31:34.121030596 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2205'. It is no longer used by any node.
+2023-04-26 06:31:34.121034754 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2290'. It is no longer used by any node.
+2023-04-26 06:31:34.121038902 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2506'. It is no longer used by any node.
+2023-04-26 06:31:34.121043009 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2220'. It is no longer used by any node.
+2023-04-26 06:31:34.121047097 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2301'. It is no longer used by any node.
+2023-04-26 06:31:34.121052657 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2462'. It is no longer used by any node.
+2023-04-26 06:31:34.121056815 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.7.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121060912 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.3.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121065080 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2322'. It is no longer used by any node.
+2023-04-26 06:31:34.121069218 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.4.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121073355 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.4.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121077513 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.2.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121081651 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2579'. It is no longer used by any node.
+2023-04-26 06:31:34.121085769 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2500'. It is no longer used by any node.
+2023-04-26 06:31:34.121089866 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2299'. It is no longer used by any node.
+2023-04-26 06:31:34.121094044 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.4.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121098162 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2499'. It is no longer used by any node.
+2023-04-26 06:31:34.121102279 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.9.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121106417 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.6.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121110895 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2217'. It is no longer used by any node.
+2023-04-26 06:31:34.121115013 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.9.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121119211 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2225'. It is no longer used by any node.
+2023-04-26 06:31:34.121123359 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2222'. It is no longer used by any node.
+2023-04-26 06:31:34.121128318 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2371'. It is no longer used by any node.
+2023-04-26 06:31:34.121132436 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2573'. It is no longer used by any node.
+2023-04-26 06:31:34.121136573 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2228'. It is no longer used by any node.
+2023-04-26 06:31:34.121140661 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2378'. It is no longer used by any node.
+2023-04-26 06:31:34.121144808 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2476'. It is no longer used by any node.
+2023-04-26 06:31:34.121156781 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2289'. It is no longer used by any node.
+2023-04-26 06:31:34.121160918 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2238'. It is no longer used by any node.
+2023-04-26 06:31:34.121165026 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2508'. It is no longer used by any node.
+2023-04-26 06:31:34.121169154 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2252'. It is no longer used by any node.
+2023-04-26 06:31:34.121173251 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2485'. It is no longer used by any node.
+2023-04-26 06:31:34.121177369 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2254'. It is no longer used by any node.
+2023-04-26 06:31:34.121181517 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2330'. It is no longer used by any node.
+2023-04-26 06:31:34.121185634 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2255'. It is no longer used by any node.
+2023-04-26 06:31:34.121189712 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2433'. It is no longer used by any node.
+2023-04-26 06:31:34.121193840 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.1.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121197967 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2257'. It is no longer used by any node.
+2023-04-26 06:31:34.121202095 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2263'. It is no longer used by any node.
+2023-04-26 06:31:34.121206193 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2588'. It is no longer used by any node.
+2023-04-26 06:31:34.121210290 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2327'. It is no longer used by any node.
+2023-04-26 06:31:34.121214548 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2287'. It is no longer used by any node.
+2023-04-26 06:31:34.121218706 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.6.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121222833 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2400'. It is no longer used by any node.
+2023-04-26 06:31:34.121227021 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2427'. It is no longer used by any node.
+2023-04-26 06:31:34.121231129 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2296'. It is no longer used by any node.
+2023-04-26 06:31:34.121235267 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2450'. It is no longer used by any node.
+2023-04-26 06:31:34.121239404 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2439'. It is no longer used by any node.
+2023-04-26 06:31:34.121243532 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2273'. It is no longer used by any node.
+2023-04-26 06:31:34.121247660 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2483'. It is no longer used by any node.
+2023-04-26 06:31:34.121253200 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2292'. It is no longer used by any node.
+2023-04-26 06:31:34.121257358 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.11.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121261465 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2532'. It is no longer used by any node.
+2023-04-26 06:31:34.121265804 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2397'. It is no longer used by any node.
+2023-04-26 06:31:34.121270011 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2333'. It is no longer used by any node.
+2023-04-26 06:31:34.121274169 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2363'. It is no longer used by any node.
+2023-04-26 06:31:34.121278317 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2395'. It is no longer used by any node.
+2023-04-26 06:31:34.121282414 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2403'. It is no longer used by any node.
+2023-04-26 06:31:34.121286552 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2497'. It is no longer used by any node.
+2023-04-26 06:31:34.121290680 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2275'. It is no longer used by any node.
+2023-04-26 06:31:34.121294827 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2336'. It is no longer used by any node.
+2023-04-26 06:31:34.121299115 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2345'. It is no longer used by any node.
+2023-04-26 06:31:34.121303273 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.8.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121307381 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2357'. It is no longer used by any node.
+2023-04-26 06:31:34.121311468 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2359'. It is no longer used by any node.
+2023-04-26 06:31:34.121315626 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2362'. It is no longer used by any node.
+2023-04-26 06:31:34.121319774 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.2.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121323872 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.8.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121327999 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2578'. It is no longer used by any node.
+2023-04-26 06:31:34.121332197 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2295'. It is no longer used by any node.
+2023-04-26 06:31:34.121336355 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2401'. It is no longer used by any node.
+2023-04-26 06:31:34.121340472 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.4.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121344590 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2406'. It is no longer used by any node.
+2023-04-26 06:31:34.121350241 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2432'. It is no longer used by any node.
+2023-04-26 06:31:34.121354448 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2229'. It is no longer used by any node.
+2023-04-26 06:31:34.121358516 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2540'. It is no longer used by any node.
+2023-04-26 06:31:34.121362784 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2366'. It is no longer used by any node.
+2023-04-26 06:31:34.121366912 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2231'. It is no longer used by any node.
+2023-04-26 06:31:34.121371029 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2541'. It is no longer used by any node.
+2023-04-26 06:31:34.121375167 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2240'. It is no longer used by any node.
+2023-04-26 06:31:34.121379295 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2261'. It is no longer used by any node.
+2023-04-26 06:31:34.121383432 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.10.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121387590 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.0.layer_norm1.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121391768 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.10.layer_norm1.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121395895 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.7.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121399993 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2569'. It is no longer used by any node.
+2023-04-26 06:31:34.121404381 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2223'. It is no longer used by any node.
+2023-04-26 06:31:34.121408489 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2570'. It is no longer used by any node.
+2023-04-26 06:31:34.121412586 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2266'. It is no longer used by any node.
+2023-04-26 06:31:34.121416684 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.embeddings.token_embedding.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121420822 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2438'. It is no longer used by any node.
+2023-04-26 06:31:34.121424909 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2572'. It is no longer used by any node.
+2023-04-26 06:31:34.121429057 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.10.layer_norm2.bias'. It is no longer used by any node.
+2023-04-26 06:31:34.121433155 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2369'. It is no longer used by any node.
+2023-04-26 06:31:34.121437292 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2502'. It is no longer used by any node.
+2023-04-26 06:31:34.121441380 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2365'. It is no longer used by any node.
+2023-04-26 06:31:34.121446680 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2219'. It is no longer used by any node.
+2023-04-26 06:31:34.121450828 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2553'. It is no longer used by any node.
+2023-04-26 06:31:34.121454965 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2505'. It is no longer used by any node.
+2023-04-26 06:31:34.121459063 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'text_model.encoder.layers.1.layer_norm2.weight'. It is no longer used by any node.
+2023-04-26 06:31:34.121463130 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::MatMul_2310'. It is no longer used by any node.
+2023-04-26 06:31:34.121467208 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2226'. It is no longer used by any node.
+2023-04-26 06:31:34.121471326 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'onnx::Add_2264'. It is no longer used by any node.
+2023-04-26 06:31:34.122686956 [V:onnxruntime:, session_state.cc:1149 VerifyEachNodeIsAssignedToAnEp] Node placements
+2023-04-26 06:31:34.122698628 [V:onnxruntime:, session_state.cc:1152 VerifyEachNodeIsAssignedToAnEp]  All nodes placed on [TensorrtExecutionProvider]. Number of nodes: 1
+2023-04-26 06:31:34.122711331 [V:onnxruntime:, session_state.cc:133 CreateGraphInfo] SaveMLValueNameIndexMapping
+2023-04-26 06:31:34.122720068 [V:onnxruntime:, session_state.cc:179 CreateGraphInfo] Done saving OrtValue mappings.
+2023-04-26 06:31:34.811238222 [I:onnxruntime:, allocation_planner.cc:2382 CreateGraphPartitioner] Use DeviceBasedPartition as default
+2023-04-26 06:31:34.811393310 [I:onnxruntime:, session_state_utils.cc:201 SaveInitializedTensors] Saving initialized tensors.
+2023-04-26 06:31:34.811403078 [I:onnxruntime:, session_state_utils.cc:344 SaveInitializedTensors] Done saving initialized tensors
+2023-04-26 06:31:34.811457900 [I:onnxruntime:, inference_session.cc:1607 Initialize] Session successfully initialized.
+2023-04-26 06:31:34.814037657 [I:onnxruntime:Default, bfc_arena.cc:339 AllocateRawInternal] Extending BFCArena for Cuda. bin_num:1 (requested) num_bytes: 308 (actual) rounded_bytes:512
+2023-04-26 06:31:34.814061121 [I:onnxruntime:Default, bfc_arena.cc:198 Extend] Extended allocation by 1048576 bytes.
+2023-04-26 06:31:34.814065890 [I:onnxruntime:Default, bfc_arena.cc:201 Extend] Total allocated bytes: 1048576
+2023-04-26 06:31:34.814071059 [I:onnxruntime:Default, bfc_arena.cc:204 Extend] Allocated memory at 0x12f368bc00 to 0x12f378bc00
+2023-04-26 06:31:34.814115362 [V:onnxruntime:, sequential_executor.cc:534 ExecuteThePlan] Number of streams: 1
+2023-04-26 06:31:34.814130480 [V:onnxruntime:, sequential_executor.cc:184 SessionScope] Begin execution
+2023-04-26 06:31:34.815326805 [V:onnxruntime:, sequential_executor.cc:518 ExecuteKernel] stream 0 launch kernel with idx 1039
+2023-04-26 06:31:34.815343546 [I:onnxruntime:Default, bfc_arena.cc:339 AllocateRawInternal] Extending BFCArena for CUDA_CPU. bin_num:9 (requested) num_bytes: 236544 (actual) rounded_bytes:236544
+2023-04-26 06:31:34.815350819 [I:onnxruntime:Default, bfc_arena.cc:198 Extend] Extended allocation by 1048576 bytes.
+2023-04-26 06:31:34.815355197 [I:onnxruntime:Default, bfc_arena.cc:201 Extend] Total allocated bytes: 1048576
+2023-04-26 06:31:34.815359555 [I:onnxruntime:Default, bfc_arena.cc:204 Extend] Allocated memory at 0x110977b20 to 0x110a77b20
+2023-04-26 06:31:34.816077440 [I:onnxruntime:, inference_session.cc:279 ConstructorCommon] Creating and using per session threadpools since use_per_session_threads_ is true
+2023-04-26 06:31:34.816088791 [I:onnxruntime:, inference_session.cc:297 ConstructorCommon] Dynamic block base set to 0
+2023-04-26 06:31:34.816877734 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054926, index: 0, mask: {1, }
+2023-04-26 06:31:34.816907514 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054927, index: 1, mask: {2, }
+2023-04-26 06:31:34.817032873 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054928, index: 2, mask: {3, }
+2023-04-26 06:31:34.817122869 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054929, index: 3, mask: {4, }
+2023-04-26 06:31:34.817149434 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054930, index: 4, mask: {5, }
+2023-04-26 06:31:34.817228171 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054931, index: 5, mask: {6, }
+2023-04-26 06:31:34.817373836 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054933, index: 7, mask: {8, }
+2023-04-26 06:31:34.817406783 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054932, index: 6, mask: {7, }
+2023-04-26 06:31:34.817530127 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054935, index: 9, mask: {10, }
+2023-04-26 06:31:34.817535827 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054934, index: 8, mask: {9, }
+2023-04-26 06:31:34.817617444 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054936, index: 10, mask: {11, }
+2023-04-26 06:31:34.817710497 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054937, index: 11, mask: {12, }
+2023-04-26 06:31:34.817753673 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054938, index: 12, mask: {13, }
+2023-04-26 06:31:34.817784615 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054939, index: 13, mask: {14, }
+2023-04-26 06:31:34.817889430 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054940, index: 14, mask: {15, }
+2023-04-26 06:31:34.817975961 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054941, index: 15, mask: {16, }
+2023-04-26 06:31:34.818009604 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054942, index: 16, mask: {17, }
+2023-04-26 06:31:34.818114163 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054943, index: 17, mask: {18, }
+2023-04-26 06:31:34.818170277 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054944, index: 18, mask: {19, }
+2023-04-26 06:31:34.818242842 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054945, index: 19, mask: {20, }
+2023-04-26 06:31:34.818315091 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054946, index: 20, mask: {21, }
+2023-04-26 06:31:34.818346870 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054947, index: 21, mask: {22, }
+2023-04-26 06:31:34.818433852 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054948, index: 22, mask: {23, }
+2023-04-26 06:31:34.818518460 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054949, index: 23, mask: {24, }
+2023-04-26 06:31:34.818563173 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054950, index: 24, mask: {25, }
+2023-04-26 06:31:34.818794989 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054951, index: 25, mask: {26, }
+2023-04-26 06:31:34.818932184 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054952, index: 26, mask: {27, }
+2023-04-26 06:31:34.818939267 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054953, index: 27, mask: {28, }
+2023-04-26 06:31:34.818979357 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054954, index: 28, mask: {29, }
+2023-04-26 06:31:34.819046251 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054955, index: 29, mask: {30, }
+2023-04-26 06:31:34.819081522 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054956, index: 30, mask: {31, }
+2023-04-26 06:31:34.819351518 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054957, index: 31, mask: {32, }
+2023-04-26 06:31:34.819415748 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054958, index: 32, mask: {33, }
+2023-04-26 06:31:34.819446080 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054959, index: 33, mask: {34, }
+2023-04-26 06:31:34.819598097 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054960, index: 34, mask: {35, }
+2023-04-26 06:31:34.819645771 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054961, index: 35, mask: {36, }
+2023-04-26 06:31:34.819727799 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054962, index: 36, mask: {37, }
+2023-04-26 06:31:34.819825380 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054963, index: 37, mask: {38, }
+2023-04-26 06:31:34.819900089 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054964, index: 38, mask: {39, }
+2023-04-26 06:31:34.819975624 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054965, index: 39, mask: {40, }
+2023-04-26 06:31:34.819975600 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054966, index: 40, mask: {41, }
+2023-04-26 06:31:34.820220745 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054967, index: 41, mask: {42, }
+2023-04-26 06:31:34.820272506 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054968, index: 42, mask: {43, }
+2023-04-26 06:31:34.820430695 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054969, index: 43, mask: {44, }
+2023-04-26 06:31:34.820600902 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054970, index: 44, mask: {45, }
+2023-04-26 06:31:34.820708642 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054971, index: 45, mask: {46, }
+2023-04-26 06:31:34.820924443 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054972, index: 46, mask: {47, }
+2023-04-26 06:31:34.821013879 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054973, index: 47, mask: {48, }
+2023-04-26 06:31:34.821029614 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054974, index: 48, mask: {49, }
+2023-04-26 06:31:34.821112679 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054975, index: 49, mask: {50, }
+2023-04-26 06:31:34.821136738 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054976, index: 50, mask: {51, }
+2023-04-26 06:31:34.821273628 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054977, index: 51, mask: {52, }
+2023-04-26 06:31:34.821273653 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054978, index: 52, mask: {53, }
+2023-04-26 06:31:34.821328134 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054979, index: 53, mask: {54, }
+2023-04-26 06:31:34.821380827 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054980, index: 54, mask: {55, }
+2023-04-26 06:31:34.821472793 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054981, index: 55, mask: {56, }
+2023-04-26 06:31:34.821545468 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054982, index: 56, mask: {57, }
+2023-04-26 06:31:34.821849809 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054984, index: 58, mask: {59, }
+2023-04-26 06:31:34.822132330 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054983, index: 57, mask: {58, }
+2023-04-26 06:31:34.822208962 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054985, index: 59, mask: {60, }
+2023-04-26 06:31:34.822225994 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054987, index: 61, mask: {62, }
+2023-04-26 06:31:34.822263404 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054986, index: 60, mask: {61, }
+2023-04-26 06:31:34.822512888 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054990, index: 64, mask: {65, }
+2023-04-26 06:31:34.822428571 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054988, index: 62, mask: {63, }
+2023-04-26 06:31:34.822475448 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054989, index: 63, mask: {64, }
+2023-04-26 06:31:34.822648319 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054991, index: 65, mask: {66, }
+2023-04-26 06:31:34.822707439 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054992, index: 66, mask: {67, }
+2023-04-26 06:31:34.822774243 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054993, index: 67, mask: {68, }
+2023-04-26 06:31:34.822786115 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054994, index: 68, mask: {69, }
+2023-04-26 06:31:34.822829896 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054995, index: 69, mask: {70, }
+2023-04-26 06:31:34.823014836 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054998, index: 72, mask: {73, }
+2023-04-26 06:31:34.823048899 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054997, index: 71, mask: {72, }
+2023-04-26 06:31:34.822951613 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054996, index: 70, mask: {71, }
+2023-04-26 06:31:34.823333357 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2054999, index: 73, mask: {74, }
+2023-04-26 06:31:34.823371118 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055000, index: 74, mask: {75, }
+2023-04-26 06:31:34.823474535 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055001, index: 75, mask: {76, }
+2023-04-26 06:31:34.823505027 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055002, index: 76, mask: {77, }
+2023-04-26 06:31:34.823531356 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055003, index: 77, mask: {78, }
+2023-04-26 06:31:34.823851812 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055004, index: 78, mask: {79, }
+2023-04-26 06:31:34.823962537 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055005, index: 79, mask: {80, }
+2023-04-26 06:31:34.823995374 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055006, index: 80, mask: {81, }
+2023-04-26 06:31:34.824028265 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055007, index: 81, mask: {82, }
+2023-04-26 06:31:34.824133260 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055009, index: 83, mask: {84, }
+2023-04-26 06:31:34.824166583 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055008, index: 82, mask: {83, }
+2023-04-26 06:31:34.824284703 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055010, index: 84, mask: {85, }
+2023-04-26 06:31:34.824320188 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055011, index: 85, mask: {86, }
+2023-04-26 06:31:34.824540102 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055012, index: 86, mask: {87, }
+2023-04-26 06:31:34.824660080 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055014, index: 88, mask: {89, }
+2023-04-26 06:31:34.824741100 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055015, index: 89, mask: {90, }
+2023-04-26 06:31:34.824706036 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055016, index: 90, mask: {91, }
+2023-04-26 06:31:34.824837940 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055013, index: 87, mask: {88, }
+2023-04-26 06:31:34.824916431 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055017, index: 91, mask: {92, }
+2023-04-26 06:31:34.838009909 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055018, index: 92, mask: {93, }
+2023-04-26 06:31:34.838255330 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055019, index: 93, mask: {94, }
+2023-04-26 06:31:34.849979742 [V:onnxruntime:Default, env.cc:246 ThreadMain] pthread_setaffinity_np succeed for thread: 2055020, index: 94, mask: {95, }
+2023-04-26 06:31:35.499158574 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:63 CreateTensorRTCustomOpDomainList] [TensorRT EP] Getting all registered TRT plugins from TRT plugin registry ...
+2023-04-26 06:31:35.499402127 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CaskDeconvShaderWeightsTransformerPlugin, version : 1
+2023-04-26 06:31:35.499411104 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CaskConvShaderWeightsTransformerPlugin, version : 1
+2023-04-26 06:31:35.499416964 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RNNTEncoderPlugin, version : 1
+2023-04-26 06:31:35.499422314 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SmallTileGEMM_TRT, version : 1
+2023-04-26 06:31:35.499427694 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] DLRM_BOTTOM_MLP_TRT, version : 1
+2023-04-26 06:31:35.499437683 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomQKVToContextPluginDynamic, version : 1
+2023-04-26 06:31:35.499442442 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomQKVToContextPluginDynamic, version : 2
+2023-04-26 06:31:35.499447301 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomQKVToContextPluginDynamic, version : 3
+2023-04-26 06:31:35.499452240 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomSkipLayerNormPluginDynamic, version : 1
+2023-04-26 06:31:35.499463892 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomSkipLayerNormPluginDynamic, version : 2
+2023-04-26 06:31:35.499468751 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomSkipLayerNormPluginDynamic, version : 3
+2023-04-26 06:31:35.499473229 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomSkipLayerNormPluginDynamic, version : 4
+2023-04-26 06:31:35.499477938 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SingleStepLSTMPlugin, version : 1
+2023-04-26 06:31:35.499483027 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2FullFusion_TRT, version : 1
+2023-04-26 06:31:35.499488598 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2Br2bBr2c_TRT, version : 1
+2023-04-26 06:31:35.499493707 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2Br2bBr2c_TRT, version : 2
+2023-04-26 06:31:35.499498646 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2Br1Br2c_TRT, version : 1
+2023-04-26 06:31:35.499503495 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RnRes2Br1Br2c_TRT, version : 2
+2023-04-26 06:31:35.499508495 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GroupNormalizationPlugin, version : 1
+2023-04-26 06:31:35.499513484 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomGeluPluginDynamic, version : 1
+2023-04-26 06:31:35.499518333 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomFCPluginDynamic, version : 1
+2023-04-26 06:31:35.499524494 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomEmbLayerNormPluginDynamic, version : 2
+2023-04-26 06:31:35.499529063 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomEmbLayerNormPluginDynamic, version : 3
+2023-04-26 06:31:35.499533862 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CustomEmbLayerNormPluginDynamic, version : 1
+2023-04-26 06:31:35.499538400 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] DisentangledAttention_TRT, version : 1
+2023-04-26 06:31:35.499543299 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] BatchedNMSDynamic_TRT, version : 1
+2023-04-26 06:31:35.499548329 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] BatchedNMS_TRT, version : 1
+2023-04-26 06:31:35.499552997 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] BatchTilePlugin_TRT, version : 1
+2023-04-26 06:31:35.499557536 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Clip_TRT, version : 1
+2023-04-26 06:31:35.499562124 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CoordConvAC, version : 1
+2023-04-26 06:31:35.499566953 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CropAndResizeDynamic, version : 1
+2023-04-26 06:31:35.499571932 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] CropAndResize, version : 1
+2023-04-26 06:31:35.499578655 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] DecodeBbox3DPlugin, version : 1
+2023-04-26 06:31:35.499584646 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] DetectionLayer_TRT, version : 1
+2023-04-26 06:31:35.499589355 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] EfficientNMS_Explicit_TF_TRT, version : 1
+2023-04-26 06:31:35.499594044 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] EfficientNMS_Implicit_TF_TRT, version : 1
+2023-04-26 06:31:35.499598793 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] EfficientNMS_ONNX_TRT, version : 1
+2023-04-26 06:31:35.499603651 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] EfficientNMS_TRT, version : 1
+2023-04-26 06:31:35.499608230 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] FlattenConcat_TRT, version : 1
+2023-04-26 06:31:35.499614061 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] fMHA_V2, version : 1
+2023-04-26 06:31:35.499618730 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] fMHCA, version : 1
+2023-04-26 06:31:35.499623599 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GenerateDetection_TRT, version : 1
+2023-04-26 06:31:35.499628187 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GridAnchor_TRT, version : 1
+2023-04-26 06:31:35.499632746 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GridAnchorRect_TRT, version : 1
+2023-04-26 06:31:35.499637354 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] GroupNorm, version : 1
+2023-04-26 06:31:35.499642193 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] InstanceNormalization_TRT, version : 1
+2023-04-26 06:31:35.499646631 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] InstanceNormalization_TRT, version : 2
+2023-04-26 06:31:35.499651050 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] LayerNorm, version : 1
+2023-04-26 06:31:35.499655959 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] LReLU_TRT, version : 1
+2023-04-26 06:31:35.499660848 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ModulatedDeformConv2d, version : 1
+2023-04-26 06:31:35.499665396 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] MultilevelCropAndResize_TRT, version : 1
+2023-04-26 06:31:35.499670105 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] MultilevelProposeROI_TRT, version : 1
+2023-04-26 06:31:35.499674774 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] MultiscaleDeformableAttnPlugin_TRT, version : 1
+2023-04-26 06:31:35.499679793 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] NMSDynamic_TRT, version : 1
+2023-04-26 06:31:35.499684712 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] NMS_TRT, version : 1
+2023-04-26 06:31:35.499691044 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Normalize_TRT, version : 1
+2023-04-26 06:31:35.499695753 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] PillarScatterPlugin, version : 1
+2023-04-26 06:31:35.499700632 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] PriorBox_TRT, version : 1
+2023-04-26 06:31:35.499705130 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ProposalDynamic, version : 1
+2023-04-26 06:31:35.499709759 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ProposalLayer_TRT, version : 1
+2023-04-26 06:31:35.499714388 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Proposal, version : 1
+2023-04-26 06:31:35.499719056 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] PyramidROIAlign_TRT, version : 1
+2023-04-26 06:31:35.499724025 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Region_TRT, version : 1
+2023-04-26 06:31:35.499728764 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Reorg_TRT, version : 1
+2023-04-26 06:31:35.499733573 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ResizeNearest_TRT, version : 1
+2023-04-26 06:31:35.499738001 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ROIAlign_TRT, version : 1
+2023-04-26 06:31:35.499742600 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] RPROI_TRT, version : 1
+2023-04-26 06:31:35.499747489 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] ScatterND, version : 1
+2023-04-26 06:31:35.499751957 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SeqLen2Spatial, version : 1
+2023-04-26 06:31:35.499756616 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SpecialSlice_TRT, version : 1
+2023-04-26 06:31:35.499762998 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] SplitGeLU, version : 1
+2023-04-26 06:31:35.499767616 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] Split, version : 1
+2023-04-26 06:31:35.499772215 [V:onnxruntime:Default, tensorrt_execution_provider_custom_ops.cc:74 CreateTensorRTCustomOpDomainList] [TensorRT EP] VoxelGeneratorPlugin, version : 1
+2023-04-26 06:31:35.499930630 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] sample:2x4x64x64
+2023-04-26 06:31:35.499941319 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] sample
+2023-04-26 06:31:35.499953111 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 2, 4, 64, 64, 
+2023-04-26 06:31:35.499957720 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] encoder_hidden_states:2x77x768
+2023-04-26 06:31:35.499964573 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] encoder_hidden_states
+2023-04-26 06:31:35.499969632 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 2, 77, 768, 
+2023-04-26 06:31:35.499975954 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] timestep:1
+2023-04-26 06:31:35.499981815 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] timestep
+2023-04-26 06:31:35.499986303 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 1, 
+2023-04-26 06:31:35.499991323 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] sample:32x4x64x64
+2023-04-26 06:31:35.499997875 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] sample
+2023-04-26 06:31:35.500002964 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 32, 4, 64, 64, 
+2023-04-26 06:31:35.500007392 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] encoder_hidden_states:32x77x768
+2023-04-26 06:31:35.500013594 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] encoder_hidden_states
+2023-04-26 06:31:35.500018473 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 32, 77, 768, 
+2023-04-26 06:31:35.500022861 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] timestep:1
+2023-04-26 06:31:35.500028311 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] timestep
+2023-04-26 06:31:35.500032970 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 1, 
+2023-04-26 06:31:35.500037889 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] sample:2x4x64x64
+2023-04-26 06:31:35.500043820 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] sample
+2023-04-26 06:31:35.500048799 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 2, 4, 64, 64, 
+2023-04-26 06:31:35.500053137 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] encoder_hidden_states:2x77x768
+2023-04-26 06:31:35.500059399 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] encoder_hidden_states
+2023-04-26 06:31:35.500064268 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 2, 77, 768, 
+2023-04-26 06:31:35.500068636 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:354 MakeInputNameShapePair] [TensorRT EP] timestep:1
+2023-04-26 06:31:35.500074036 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:413 ParseProfileShapes] [TensorRT EP] timestep
+2023-04-26 06:31:35.500078485 [V:onnxruntime:Default, tensorrt_execution_provider_utils.h:419 ParseProfileShapes] [TensorRT EP] 1, 
+2023-04-26 06:31:35.500088042 [V:onnxruntime:Default, tensorrt_execution_provider.cc:919 TensorrtExecutionProvider] [TensorRT EP] TensorRT provider options: device_id: 0, trt_max_partition_iterations: 1000, trt_min_subgraph_size: 1, trt_max_workspace_size: 1073741824, trt_fp16_enable: 1, trt_int8_enable: 0, trt_int8_calibration_cache_name: , int8_calibration_cache_available: 0, trt_int8_use_native_tensorrt_calibration_table: 0, trt_dla_enable: 0, trt_dla_core: 0, trt_dump_subgraphs: 0, trt_engine_cache_enable: 1, trt_cache_path: ./onnx_1.5/unet_ort_engine_16_64_64_768_v1, trt_engine_decryption_enable: 0, trt_engine_decryption_lib_path: , trt_force_sequential_engine_build: 0, trt_context_memory_sharing_enable: 0, trt_layer_norm_fp32_fallback: 0, trt_build_heuristics_enable: 0, trt_sparsity_enable: 0, trt_builder_optimization_level: 2, trt_auxiliary_streams: -1, trt_tactic_sources: , trt_profile_min_shapes: sample:2x4x64x64,encoder_hidden_states:2x77x768,timestep:1, trt_profile_max_shapes: sample:32x4x64x64,encoder_hidden_states:32x77x768,timestep:1, trt_profile_opt_shapes: sample:2x4x64x64,encoder_hidden_states:2x77x768,timestep:1
+2023-04-26 06:31:35.503218283 [I:onnxruntime:, inference_session.cc:1306 Initialize] Initializing session.
+2023-04-26 06:31:35.503231036 [I:onnxruntime:, inference_session.cc:1343 Initialize] Adding default CPU execution provider.
+2023-04-26 06:31:35.503243840 [I:onnxruntime:Default, bfc_arena.cc:27 BFCArena] Creating BFCArena for Cuda with following configs: initial_chunk_size_bytes: 1048576 max_dead_bytes_per_chunk: 134217728 initial_growth_chunk_size_bytes: 2097152 memory limit: 18446744073709551615 arena_extend_strategy: 0
+2023-04-26 06:31:35.503250012 [V:onnxruntime:Default, bfc_arena.cc:63 BFCArena] Creating 21 bins of max chunk size 256 to 268435456
+2023-04-26 06:31:35.503258908 [I:onnxruntime:Default, bfc_arena.cc:27 BFCArena] Creating BFCArena for CudaPinned with following configs: initial_chunk_size_bytes: 1048576 max_dead_bytes_per_chunk: 134217728 initial_growth_chunk_size_bytes: 2097152 memory limit: 18446744073709551615 arena_extend_strategy: 0
+2023-04-26 06:31:35.503263186 [V:onnxruntime:Default, bfc_arena.cc:63 BFCArena] Creating 21 bins of max chunk size 256 to 268435456
+2023-04-26 06:31:35.503268597 [I:onnxruntime:Default, bfc_arena.cc:27 BFCArena] Creating BFCArena for CUDA_CPU with following configs: initial_chunk_size_bytes: 1048576 max_dead_bytes_per_chunk: 134217728 initial_growth_chunk_size_bytes: 2097152 memory limit: 18446744073709551615 arena_extend_strategy: 0
+2023-04-26 06:31:35.503272854 [V:onnxruntime:Default, bfc_arena.cc:63 BFCArena] Creating 21 bins of max chunk size 256 to 268435456
+2023-04-26 06:31:35.503280980 [I:onnxruntime:Default, bfc_arena.cc:27 BFCArena] Creating BFCArena for Cpu with following configs: initial_chunk_size_bytes: 1048576 max_dead_bytes_per_chunk: 134217728 initial_growth_chunk_size_bytes: 2097152 memory limit: 18446744073709551615 arena_extend_strategy: 0
+2023-04-26 06:31:35.503285217 [V:onnxruntime:Default, bfc_arena.cc:63 BFCArena] Creating 21 bins of max chunk size 256 to 268435456
+2023-04-26 06:31:35.503297320 [I:onnxruntime:, session_state.cc:98 SetupAllocators] Allocator already registered for OrtMemoryInfo:[name:Cuda id:0 OrtMemType:0 OrtAllocatorType:1 Device:[DeviceType:1 MemoryType:0 DeviceId:0]]. Ignoring allocator from CUDAExecutionProvider
+2023-04-26 06:31:35.503303351 [I:onnxruntime:, session_state.cc:98 SetupAllocators] Allocator already registered for OrtMemoryInfo:[name:CudaPinned id:0 OrtMemType:-1 OrtAllocatorType:1 Device:[DeviceType:0 MemoryType:1 DeviceId:0]]. Ignoring allocator from CUDAExecutionProvider
+2023-04-26 06:31:35.503309012 [I:onnxruntime:, session_state.cc:98 SetupAllocators] Allocator already registered for OrtMemoryInfo:[name:CUDA_CPU id:0 OrtMemType:-2 OrtAllocatorType:1 Device:[DeviceType:0 MemoryType:0 DeviceId:0]]. Ignoring allocator from CUDAExecutionProvider
+2023-04-26 06:31:35.543699357 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.3/resnets.2/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543755952 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.3/attentions.1/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543772974 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.3/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543794675 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.2/attentions.2/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543855558 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/mid_block/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543874212 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.0/attentions.0/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543918034 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.0/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543935206 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.0/attentions.1/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543943701 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.1/attentions.0/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543960352 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.1/attentions.1/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.543977895 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.2/resnets.2/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544035883 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/mid_block/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544053856 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.2/attentions.0/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544082650 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.2/attentions.1/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544089853 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.1/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544104841 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/mid_block/attentions.0/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544134877 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.2/attentions.1/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544161026 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.3/attentions.0/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544200559 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.1/attentions.2/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544209195 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.2/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544219755 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.1/attentions.0/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544226558 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.3/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544233811 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.3/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544244841 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.2/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544266993 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.1/attentions.1/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544276420 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.2/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544290927 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.2/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544296798 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.0/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544333837 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.3/attentions.2/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544340159 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.1/resnets.2/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544355317 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.3/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544371096 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.2/attentions.0/transformer_blocks.0/ff/net.0/Constant_4_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544389080 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.0/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544395261 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.0/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544401162 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.0/resnets.2/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544406602 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/up_blocks.1/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544440115 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.1/resnets.1/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.544475330 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/down_blocks.1/resnets.0/Constant_2_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.571180418 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 2194
+2023-04-26 06:31:35.641488636 [I:onnxruntime:Default, bfc_arena.cc:339 AllocateRawInternal] Extending BFCArena for Cpu. bin_num:0 (requested) num_bytes: 8 (actual) rounded_bytes:256
+2023-04-26 06:31:35.641678248 [I:onnxruntime:Default, bfc_arena.cc:198 Extend] Extended allocation by 1048576 bytes.
+2023-04-26 06:31:35.641684420 [I:onnxruntime:Default, bfc_arena.cc:201 Extend] Total allocated bytes: 1048576
+2023-04-26 06:31:35.641689479 [I:onnxruntime:Default, bfc_arena.cc:204 Extend] Allocated memory at 0x1689f48c0 to 0x168af48c0
+2023-04-26 06:31:35.680844087 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer '/Shape_1_output_0'. It is no longer used by any node.
+2023-04-26 06:31:35.680895202 [I:onnxruntime:, graph.cc:3546 CleanUnusedInitializersAndNodeArgs] Removing initializer 'ortshared_7_0_1_5'. It is no longer used by any node.
+2023-04-26 06:31:35.685740361 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.0/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.685770397 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.0/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.685798550 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.0/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.685814589 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.0/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.685839135 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.0/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.685854754 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.0/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.685886343 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.1/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.685917250 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.1/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.685936145 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.1/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.685950863 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.1/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.685972593 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.1/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.685987341 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.0/attentions.1/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686019921 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.0/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686038816 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.0/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.686053353 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.0/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.686068932 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.0/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.686091254 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.0/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.686105781 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.0/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686137259 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.1/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686157367 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.1/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.686171683 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.1/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.686186832 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.1/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.686208922 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.1/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.686223780 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.1/attentions.1/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686254497 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.0/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686272932 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.0/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.686294111 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.0/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.686309469 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.0/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.686330969 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.0/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.686346218 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.0/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686378337 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.1/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686397403 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.1/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.686412331 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.1/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.686427850 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.1/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.686450662 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.1/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.686465710 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /down_blocks.2/attentions.1/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686500004 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /mid_block/attentions.0/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686519520 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /mid_block/attentions.0/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.686534027 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /mid_block/attentions.0/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.686548604 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /mid_block/attentions.0/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.686570575 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /mid_block/attentions.0/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.686585523 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /mid_block/attentions.0/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686620939 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.0/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686640024 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.0/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.686654832 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.0/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.686669659 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.0/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.686693083 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.0/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.686707339 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.0/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686737876 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.1/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686757543 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.1/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.686774694 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.1/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.686789412 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.1/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.686811854 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.1/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.686826551 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.1/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686857579 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.2/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686876885 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.2/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.686891963 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.2/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.686906329 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.2/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.686929092 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.2/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.686943448 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.1/attentions.2/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.686973003 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.0/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.686991788 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.0/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.687006285 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.0/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.687020592 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.0/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.687043665 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.0/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.687058392 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.0/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.687088919 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.1/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.687107684 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.1/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.687121991 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.1/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.687136337 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.1/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.687157857 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.1/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.687172484 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.1/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.687202741 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.2/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.687222026 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.2/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.687240100 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.2/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.687255208 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.2/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.687277389 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.2/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.687292678 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.2/attentions.2/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.687322403 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.0/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.687341529 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.0/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.687356426 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.0/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.687371484 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.0/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.687392954 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.0/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.687407972 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.0/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.687438579 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.1/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.687457054 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.1/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.687471210 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.1/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.687485987 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.1/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.687507327 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.1/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.687521554 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.1/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.687552441 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.2/transformer_blocks.0/attn2/Reshape_2_output_0
+2023-04-26 06:31:35.687571787 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.2/transformer_blocks.0/attn1/Reshape_2_output_0
+2023-04-26 06:31:35.687586584 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.2/transformer_blocks.0/attn1/Reshape_output_0
+2023-04-26 06:31:35.687601091 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.2/transformer_blocks.0/attn1/Reshape_4_output_0
+2023-04-26 06:31:35.687623293 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.2/transformer_blocks.0/attn2/Reshape_output_0
+2023-04-26 06:31:35.687637739 [I:onnxruntime:, reshape_fusion.cc:49 ApplyImpl] Fused reshape node: /up_blocks.3/attentions.2/transformer_blocks.0/attn2/Reshape_4_output_0
+2023-04-26 06:31:35.687660833 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 96
+2023-04-26 06:31:35.735253851 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 97
+2023-04-26 06:31:35.775315165 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:35.788596772 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:31:35.827481879 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:35.840785637 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:31:35.880670212 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:35.894056393 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:31:35.932995240 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:35.946233467 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:31:35.986593906 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:36.000121140 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:31:36.039081987 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:36.052382369 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:31:36.093066892 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:36.106556266 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:31:36.145419051 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:36.158732687 [I:onnxruntime:, constant_sharing.cc:257 ApplyImpl] Total shared scalar initializer count: 0
+2023-04-26 06:31:36.197521334 [I:onnxruntime:, reshape_fusion.cc:53 ApplyImpl] Total fused reshape node count: 0
+2023-04-26 06:31:36.206752790 [I:onnxruntime:Default, tensorrt_execution_provider_utils.h:236 TRTGenerateId] [TensorRT EP] Model name is unet_ort.onnx
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:604] Reading dangerously large protocol message.  If the message turns out to be larger than 2147483647 bytes, parsing will be halted for security reasons.  To increase the limit (or to disable these warnings), see CodedInputStream::SetTotalBytesLimit() in google/protobuf/io/coded_stream.h.
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:81] The total number of bytes read was 1720948656
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:604] Reading dangerously large protocol message.  If the message turns out to be larger than 2147483647 bytes, parsing will be halted for security reasons.  To increase the limit (or to disable these warnings), see CodedInputStream::SetTotalBytesLimit() in google/protobuf/io/coded_stream.h.
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:81] The total number of bytes read was 1720948656
+2023-04-26 06:31:37.971747449 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:37 WARNING] onnx2trt_utils.cpp:374: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+2023-04-26 06:31:37.971804355 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:37 WARNING] onnx2trt_utils.cpp:400: One or more weights outside the range of INT32 was clamped
+2023-04-26 06:31:38.145824068 [I:onnxruntime:Default, tensorrt_execution_provider.cc:1214 GetSubGraph] [TensorRT EP] TensorRT subgraph MetaDef name TRTKernel_graph_torch_jit_15784372789014390476_0
+2023-04-26 06:31:38.148871885 [I:onnxruntime:Default, tensorrt_execution_provider.cc:1214 GetSubGraph] [TensorRT EP] TensorRT subgraph MetaDef name TRTKernel_graph_torch_jit_15784372789014390476_0
+2023-04-26 06:31:38.149198773 [I:onnxruntime:Default, tensorrt_execution_provider.cc:1677 GetCapability] [TensorRT EP] Whole graph will run on TensorRT execution provider
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:604] Reading dangerously large protocol message.  If the message turns out to be larger than 2147483647 bytes, parsing will be halted for security reasons.  To increase the limit (or to disable these warnings), see CodedInputStream::SetTotalBytesLimit() in google/protobuf/io/coded_stream.h.
+[libprotobuf WARNING google/protobuf/io/coded_stream.cc:81] The total number of bytes read was 1721189307
+2023-04-26 06:31:39.171379144 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:39 WARNING] onnx2trt_utils.cpp:374: Your ONNX model has been generated with INT64 weights, while TensorRT does not natively support INT64. Attempting to cast down to INT32.
+2023-04-26 06:31:39.171433555 [W:onnxruntime:Default, tensorrt_execution_provider.h:76 log] [2023-04-26 06:31:39 WARNING] onnx2trt_utils.cpp:400: One or more weights outside the range of INT32 was clamped
+2023-04-26 06:31:39.262047874 [V:onnxruntime:Default, tensorrt_execution_provider.cc:395 ApplyProfileShapesFromProviderOptions] [TensorRT EP] Begin to apply profile shapes ...
+2023-04-26 06:31:39.262098529 [V:onnxruntime:Default, tensorrt_execution_provider.cc:396 ApplyProfileShapesFromProviderOptions] [TensorRT EP] Input tensor name is 'encoder_hidden_states', number of profiles found is 1
+2023-04-26 06:31:39.267361034 [V:onnxruntime:Default, tensorrt_execution_provider.cc:431 ApplyProfileShapesFromProviderOptions] [TensorRT EP] number of dimension of this execution tensor is 3
+2023-04-26 06:31:39.267383877 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[0] is 2
+2023-04-26 06:31:39.267388605 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[0] is 32
+2023-04-26 06:31:39.267393083 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[0] is 2
+2023-04-26 06:31:39.267397462 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[1] is 77
+2023-04-26 06:31:39.267401690 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[1] is 77
+2023-04-26 06:31:39.267405927 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[1] is 77
+2023-04-26 06:31:39.267410226 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[2] is 768
+2023-04-26 06:31:39.267414624 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[2] is 768
+2023-04-26 06:31:39.267418982 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[2] is 768
+2023-04-26 06:31:39.267432587 [V:onnxruntime:Default, tensorrt_execution_provider.cc:395 ApplyProfileShapesFromProviderOptions] [TensorRT EP] Begin to apply profile shapes ...
+2023-04-26 06:31:39.267437025 [V:onnxruntime:Default, tensorrt_execution_provider.cc:396 ApplyProfileShapesFromProviderOptions] [TensorRT EP] Input tensor name is 'sample', number of profiles found is 1
+2023-04-26 06:31:39.267636426 [V:onnxruntime:Default, tensorrt_execution_provider.cc:431 ApplyProfileShapesFromProviderOptions] [TensorRT EP] number of dimension of this execution tensor is 4
+2023-04-26 06:31:39.267641445 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[0] is 2
+2023-04-26 06:31:39.267645623 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[0] is 32
+2023-04-26 06:31:39.267649861 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[0] is 2
+2023-04-26 06:31:39.267654329 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[1] is 4
+2023-04-26 06:31:39.267667053 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[1] is 4
+2023-04-26 06:31:39.267671311 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[1] is 4
+2023-04-26 06:31:39.267675649 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[2] is 64
+2023-04-26 06:31:39.267679837 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[2] is 64
+2023-04-26 06:31:39.267684345 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[2] is 64
+2023-04-26 06:31:39.267689745 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[3] is 64
+2023-04-26 06:31:39.267695005 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[3] is 64
+2023-04-26 06:31:39.267699243 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[3] is 64
+2023-04-26 06:31:39.267708730 [V:onnxruntime:Default, tensorrt_execution_provider.cc:395 ApplyProfileShapesFromProviderOptions] [TensorRT EP] Begin to apply profile shapes ...
+2023-04-26 06:31:39.267714091 [V:onnxruntime:Default, tensorrt_execution_provider.cc:396 ApplyProfileShapesFromProviderOptions] [TensorRT EP] Input tensor name is 'timestep', number of profiles found is 1
+2023-04-26 06:31:39.267718589 [V:onnxruntime:Default, tensorrt_execution_provider.cc:431 ApplyProfileShapesFromProviderOptions] [TensorRT EP] number of dimension of this execution tensor is 1
+2023-04-26 06:31:39.267722997 [V:onnxruntime:Default, tensorrt_execution_provider.cc:437 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_min.d[0] is 1
+2023-04-26 06:31:39.267727175 [V:onnxruntime:Default, tensorrt_execution_provider.cc:438 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_max.d[0] is 1
+2023-04-26 06:31:39.267731373 [V:onnxruntime:Default, tensorrt_execution_provider.cc:439 ApplyProfileShapesFromProviderOptions] [TensorRT EP] dims_opt.d[0] is 1
+2023-04-26 06:31:39.272541407 [V:onnxruntime:Default, tensorrt_execution_provider.cc:1863 Compile] [TensorRT EP] FP16 mode is enabled
+2023-04-26 06:32:08.975638435 [E:onnxruntime:Default, tensorrt_execution_provider.h:74 log] [2023-04-26 06:32:08   ERROR] 10: Could not find any implementation for node {ForeignNode[onnx::LayerNormalization_9032 + (Unnamed Layer* 331) [Shuffle].../down_blocks.0/attentions.0/Reshape_1 + /down_blocks.0/attentions.0/Transpose_1]}.
+2023-04-26 06:32:09.034622396 [E:onnxruntime:Default, tensorrt_execution_provider.h:74 log] [2023-04-26 06:32:09   ERROR] 10: [optimizer.cpp::computeCosts::3873] Error Code 10: Internal Error (Could not find any implementation for node {ForeignNode[onnx::LayerNormalization_9032 + (Unnamed Layer* 331) [Shuffle].../down_blocks.0/attentions.0/Reshape_1 + /down_blocks.0/attentions.0/Transpose_1]}.)
+Namespace(prompt=['a beautiful photograph of Mt. Fuji during cherry blossom'], batch_size=1, height=512, width=512, num_warmup_runs=5, denoising_steps=50, seed=1, onnx_dir='./onnx', device='cuda', tokenizer=CLIPTokenizer(name_or_path='openai/clip-vit-large-patch14', vocab_size=49408, model_max_length=77, is_fast=False, padding_side='right', truncation_side='right', special_tokens={'bos_token': AddedToken("<|startoftext|>", rstrip=False, lstrip=False, single_word=False, normalized=True), 'eos_token': AddedToken("<|endoftext|>", rstrip=False, lstrip=False, single_word=False, normalized=True), 'unk_token': AddedToken("<|endoftext|>", rstrip=False, lstrip=False, single_word=False, normalized=True), 'pad_token': '<|endoftext|>'}, clean_up_tokenization_spaces=True), scheduler=<utilities.LMSDiscreteScheduler object at 0x7f9ce905d420>, io_binding=False, denoising_prec='fp16', num_images=1, negative_prompt=[''], guidance_scale=7.5, output_dir='./output', use_explicit_profiles=1)
+Loading CLIP model.
+Loading UNet model.
+Traceback (most recent call last):
+  File "/nvme/tlwu/tensorrt/demo/Diffusion/ort_trt.py", line 381, in <module>
+    main()
+  File "/nvme/tlwu/tensorrt/demo/Diffusion/ort_trt.py", line 327, in main
+    unet_sess = ort.InferenceSession('./onnx_1.5/unet_ort.onnx', providers=[('TensorrtExecutionProvider', trt_ep_options), 'CUDAExecutionProvider'])
+  File "/data/anaconda3/envs/py310/lib/python3.10/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py", line 383, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+  File "/data/anaconda3/envs/py310/lib/python3.10/site-packages/onnxruntime/capi/onnxruntime_inference_collection.py", line 435, in _create_inference_session
+    sess.initialize_session(providers, provider_options, disabled_optimizers)
+onnxruntime.capi.onnxruntime_pybind11_state.EPFail: [ONNXRuntimeError] : 11 : EP_FAIL : TensorRT EP could not build engine for fused node: TensorrtExecutionProvider_TRTKernel_graph_torch_jit_15784372789014390476_0_0

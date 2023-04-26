@@ -39,6 +39,8 @@ def get_args():
     parser.add_argument('--guidance-scale', default=7.5, type=float)
     parser.add_argument('--output-dir', default='./output', help='Output directory for logs and image artifacts')
 
+    parser.add_argument('--use_explicit_profiles', default=1, type=int)
+
     args = parser.parse_args()
     
     # Set prompt sizes
@@ -109,7 +111,7 @@ def run_ort_trt(model_path, input_args, output_args=None, use_io_binding=False):
             
             For details on IO Binding, visit https://onnxruntime.ai/docs/api/python/api_summary.html#data-on-device
     """
-    sess = ort.InferenceSession(model_path, providers=['TensorrtExecutionProvider', 'CUDAExecutionProvider'])
+    sess = ort.InferenceSession(model_path, providers=['TensorrtExecutionProvider']) #, 'CUDAExecutionProvider'])
     if use_io_binding:
         io_binding = sess.io_binding()
         if isinstance(input_args, list):
@@ -272,38 +274,79 @@ def main():
     #os.environ['ORT_TENSORRT_MAX_WORKSPACE_SIZE'] = str(int(one_gb * 5))
 
     # Load models and convert to FP16 with first inference passes to reduce latency
-    batch_size = 1
+    batch_size = args.batch_size
+    max_batch = 16
+    max_batchx2 = 2 * max_batch
+    d = 768
+    h = args.height // 8
+    w = args.width // 8
+    engine_tag = f"{max_batch}_{h}_{w}_{d}_v1"
+
+    if args.seed > 0:
+        ort.set_default_logger_severity(0)
+
     print("Loading CLIP model.")
-    
-    clip_sess = ort.InferenceSession('./onnx_1.5/clip_ort.onnx', providers=[('TensorrtExecutionProvider', {
-        'device_id': 0,
-        'trt_fp16_enable': True,
-        'trt_engine_cache_enable': True,
-        'trt_engine_cache_path':  "./onnx_1.5/clip_ort_engine"
-    }), 'CUDAExecutionProvider'])
+
+    trt_ep_default_options = { 'device_id': 0, 'trt_fp16_enable': True, 'trt_engine_cache_enable': True}
+
+    if args.use_explicit_profiles:
+        trt_ep_options = { 
+            'trt_engine_cache_path':  f"./onnx_1.5/clip_ort_engine_{engine_tag}",
+	    'trt_profile_min_shapes': "input_ids:1x77",
+	    'trt_profile_max_shapes': f"input_ids:{max_batch}x77",
+	    'trt_profile_opt_shapes': "input_ids:1x77",
+	    'trt_engine_cache_built_with_explicit_profiles': True
+       }
+    else:
+        trt_ep_options = { 'trt_engine_cache_path':  f"./onnx_1.5/clip_ort_engine_{batch_size}",}
+
+    trt_ep_options.update(trt_ep_default_options)
+
+    clip_sess = ort.InferenceSession('./onnx_1.5/clip_ort.onnx', providers=[('TensorrtExecutionProvider', trt_ep_options), 'CUDAExecutionProvider'])
     clip_sess.run(None, {'input_ids': np.zeros((batch_size, 77), dtype=np.int32)})
 
     print("Loading UNet model.")
-    unet_sess = ort.InferenceSession('./onnx_1.5/unet_ort.onnx', providers=[('TensorrtExecutionProvider', {
-        'device_id': 0,
-        'trt_fp16_enable': True,
-        'trt_engine_cache_enable': True,
-        'trt_engine_cache_path':  "./onnx_1.5/unet_ort_engine"
-    }), 'CUDAExecutionProvider'])
-    unet_args = {
-        'sample': np.zeros((2*batch_size, 4, args.height // 8, args.width // 8), dtype=np.float32),
-        'timestep': np.zeros((1,), dtype=np.float32),
-        'encoder_hidden_states': np.zeros((2 * batch_size, 77, 768), dtype=np.float16 if args.denoising_prec == 'fp16' else np.float32),
-    }
+    sess_options = ort.SessionOptions()
+    #sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_BASIC
+    sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_DISABLE_ALL
+
+    if args.use_explicit_profiles: 
+        trt_ep_options = {
+            'trt_engine_cache_path': f"./onnx_1.5/unet_ort_engine_{engine_tag}",
+            'trt_profile_min_shapes': f"sample:2x4x{h}x{w},encoder_hidden_states:2x77x{d},timestep:1", 
+            'trt_profile_max_shapes': f"sample:{max_batchx2}x4x{h}x{w},encoder_hidden_states:{max_batchx2}x77x{d},timestep:1", 
+            'trt_profile_opt_shapes': f"sample:2x4x{h}x{w},encoder_hidden_states:2x77x{d},timestep:1", 
+	    'trt_engine_cache_built_with_explicit_profiles': True
+       }
+    else:
+        trt_ep_options = { 'trt_engine_cache_path':  f"./onnx_1.5/unet_ort_engine_{batch_size}",}
+
+    trt_ep_options.update(trt_ep_default_options)
+
+
+    unet_sess = ort.InferenceSession('./onnx_1.5/unet_ort.onnx', providers=[('TensorrtExecutionProvider', trt_ep_options), 'CUDAExecutionProvider'])
+    unet_args = { 'sample': np.zeros((2*batch_size, 4, args.height // 8, args.width // 8), dtype=np.float32), 
+                  'timestep': np.zeros((1,), dtype=np.float32), 
+                  'encoder_hidden_states': np.zeros((2 * batch_size, 77, 768), dtype=np.float16 if args.denoising_prec == 'fp16' else np.float32),
+                }
     unet_sess.run(None, unet_args)
 
+    if args.use_explicit_profiles: 
+        trt_ep_options = {
+        'trt_engine_cache_path': f"./onnx_1.5/vae_ort_engine_{engine_tag}",
+	'trt_profile_min_shapes': f"latent:1x4x{h}x{w}",
+	'trt_profile_max_shapes': f"latent:{max_batch}x4x{h}x{w}",
+	'trt_profile_opt_shapes': f"latent:1x4x{h}x{w}",
+	'trt_engine_cache_built_with_explicit_profiles': True
+       }
+    else:
+        trt_ep_options = { 'trt_engine_cache_path':  f"./onnx_1.5/vae_ort_engine_{batch_size}",}
+
+    trt_ep_options.update(trt_ep_default_options)
+
+
     print("Loading VAE model.")
-    vae_sess = ort.InferenceSession('./onnx_1.5/vae_ort.onnx', providers=[('TensorrtExecutionProvider', {
-        'device_id': 0,
-        'trt_fp16_enable': True,
-        'trt_engine_cache_enable': True,
-        'trt_engine_cache_path':  "./onnx_1.5/vae_ort_engine"
-    }), 'CUDAExecutionProvider'])
+    vae_sess = ort.InferenceSession('./onnx_1.5/vae_ort.onnx', sess_options, providers=[('TensorrtExecutionProvider', trt_ep_options), 'CUDAExecutionProvider'])
     vae_sess.run(None, {'latent': np.zeros((batch_size, 4, args.height // 8, args.width // 8), dtype=np.float32)})
 
     # Warm up pipeline
@@ -318,8 +361,8 @@ def main():
     # Measure each batch size
     init_prompt = args.prompt[0]
     init_negative_prompt = args.negative_prompt[:1]
-    for bs in [1, 2, 4, 8, 16]:
-        args.batch_size = bs
+    for bs in [args.batch_size]:
+        #args.batch_size = bs
         print(f"\nBatch size = {bs}\n")
 
         args.prompt = [init_prompt for _ in range(args.batch_size)]
