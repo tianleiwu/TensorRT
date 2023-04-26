@@ -368,13 +368,13 @@ def main():
     max_latent_shape = self.max_image_shape // 8
     min_latent_height = min_latent_shape
     min_latent_width = min_latent_shape
-    max_latent_height = min_latent_shape
-    max_latent_width = min_latent_shape
+    max_latent_height = max_latent_shape
+    max_latent_width = max_latent_shape
     opt_batch = 1
     opt_latent_height = 64
     opt_latent_width = 64
 
-    engine_tag = f"{max_batch}_{latent_height}_{latent_width}_{embed_dim}_v1"
+    engine_tag = f"{max_batch}_{min_latent_shape}_{max_latent_shape}"
 
     if args.seed > 0:
         ort.set_default_logger_severity(0)
