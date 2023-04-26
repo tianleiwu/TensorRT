@@ -105,77 +105,6 @@ def to_pt(tensor, new_dtype):
     return tensor.type(new_dtype) if tensor.dtype != new_dtype else tensor
 
 
-def run_ort_trt(model_path, input_args, output_args=None, use_io_binding=False):
-    """
-    Run the stable diffusion pipeline with ORT-TRT.
-
-    Args:
-        model_path (str):
-            Path to the ONNX model.
-        input_args (dict):
-            The input arguments needed to run the InferenceSession. This can be in two formats:
-
-            With IO Binding:
-                {
-                    'name': <input name>,
-                    'device_type': 'cuda',
-                    'device_id': 0,
-                    'element_type': <input element type>,
-                    'shape': <input shape>,
-                    'buffer_ptr': <pointer to allocated input>
-                }
-
-            Without IO Binding:
-                {
-                    '<model-input-1-name>': <model-input-1-data>,
-                    '<model-input-2-name>': <model-input-2-data>,
-                    ...
-                }
-        output_args (dict, optional):
-            The output arguments needed for IO Binding. The format is:
-
-            {
-                'name': <output name>,
-                'device_type': 'cuda',
-                'device_id': 0,
-                'element_type': <output element type>,
-                'shape': <output shape>,
-                'buffer_ptr': <pointer to allocated output>
-            }
-        use_io_binding (bool):
-            Whether to use IO Binding or not
-
-            For details on IO Binding, visit https://onnxruntime.ai/docs/api/python/api_summary.html#data-on-device
-    """
-    sess = ort.InferenceSession(
-        model_path, providers=["TensorrtExecutionProvider"]
-    )  # , 'CUDAExecutionProvider'])
-    if use_io_binding:
-        io_binding = sess.io_binding()
-        if isinstance(input_args, list):
-            for input_arg in input_args:
-                assert isinstance(input_arg, dict)
-                io_binding.bind_input(**input_arg)
-        else:
-            assert isinstance(input_args, dict)
-            io_binding.bind_input(**input_args)
-
-        if isinstance(output_args, list):
-            for output_arg in output_args:
-                assert isinstance(output_arg, dict)
-                io_binding.bind_output(**output_arg)
-        else:
-            assert isinstance(output_args, dict)
-            io_binding.bind_output(**output_args)
-
-        outputs = sess.run_with_iobinding(io_binding)
-        # return io_binding.copy_outputs_to_cpu()
-    else:
-        outputs = sess.run(None, input_args)
-
-    return outputs
-
-
 # Modified from demo-diffusion.py
 def run_pipeline(args, clip_sess, unet_sess, vae_sess):
     latent_height, latent_width = args.height // 8, args.width // 8
@@ -355,17 +284,17 @@ def main():
     # Load models and convert to FP16 with first inference passes to reduce latency
     batch_size = args.batch_size
     min_batch = 1
-    max_batch = 16
+    max_batch = 8
     embed_dim = 768
     unet_dim = 4
     max_text_len = 77
     latent_height = args.height // 8
     latent_width = args.width // 8
 
-    min_image_shape = 256  # min image resolution: 256x256
-    max_image_shape = 1024  # max image resolution: 1024x1024
-    min_latent_shape = self.min_image_shape // 8
-    max_latent_shape = self.max_image_shape // 8
+    min_image_shape = 512  # min image resolution: 512x512
+    max_image_shape = 512  # max image resolution: 768x768
+    min_latent_shape = min_image_shape // 8
+    max_latent_shape = max_image_shape // 8
     min_latent_height = min_latent_shape
     min_latent_width = min_latent_shape
     max_latent_height = max_latent_shape
@@ -374,7 +303,7 @@ def main():
     opt_latent_height = 64
     opt_latent_width = 64
 
-    engine_tag = f"{max_batch}_{min_latent_shape}_{max_latent_shape}"
+    engine_tag = f"opt_{max_batch}_{min_latent_shape}_{max_latent_shape}"
 
     if args.seed > 0:
         ort.set_default_logger_severity(0)
@@ -385,7 +314,7 @@ def main():
         "device_id": 0,
         "trt_fp16_enable": True,
         "trt_engine_cache_enable": True,
-        "trt_max_workspace_size": 0,
+        "trt_max_workspace_size": 4294967296, # 4 GB
         #"trt_timing_cache_enable": True,
         #"trt_detailed_build_log": True,
     }
@@ -406,7 +335,7 @@ def main():
     trt_ep_options.update(trt_ep_default_options)
 
     clip_sess = ort.InferenceSession(
-        "./onnx_1.5/clip_ort.onnx",
+        "./onnx_1.5/clip.opt.onnx",
         providers=[
             ("TensorrtExecutionProvider", trt_ep_options),
             "CUDAExecutionProvider",
@@ -418,7 +347,7 @@ def main():
 
     print("Loading UNet model.")
     sess_options = ort.SessionOptions()
-    # sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_BASIC
+    #sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_BASIC
     sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_DISABLE_ALL
 
     if args.use_explicit_profiles:
@@ -428,6 +357,8 @@ def main():
             "trt_profile_max_shapes": f"sample:{2 * max_batch}x{unet_dim}x{max_latent_height}x{max_latent_width},encoder_hidden_states:{2 * max_batch}x{max_text_len}x{embed_dim},timestep:1",
             "trt_profile_opt_shapes": f"sample:{2 * opt_batch}x{unet_dim}x{opt_latent_height}x{opt_latent_width},encoder_hidden_states:{2 * opt_batch}x{max_text_len}x{embed_dim},timestep:1",
             "trt_engine_cache_built_with_explicit_profiles": True,
+            "trt_max_workspace_size": 34359738368  # 32 GB
+
         }
     else:
         trt_ep_options = {
@@ -437,7 +368,7 @@ def main():
     trt_ep_options.update(trt_ep_default_options)
 
     unet_sess = ort.InferenceSession(
-        "./onnx_1.5/unet_ort.onnx",
+        "./onnx_1.5/unet.opt.onnx",
         providers=[
             ("TensorrtExecutionProvider", trt_ep_options),
             "CUDAExecutionProvider",
@@ -472,7 +403,7 @@ def main():
 
     print("Loading VAE model.")
     vae_sess = ort.InferenceSession(
-        "./onnx_1.5/vae_ort.onnx",
+        "./onnx_1.5/vae.opt.onnx",
         sess_options,
         providers=[
             ("TensorrtExecutionProvider", trt_ep_options),
