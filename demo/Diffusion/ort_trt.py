@@ -26,8 +26,8 @@ def get_args():
         help="Text prompt(s) to guide image generation",
     )
     parser.add_argument("--batch-size", default=1, type=int)
-    parser.add_argument("--height", default=512, type=int)
-    parser.add_argument("--width", default=512, type=int)
+    parser.add_argument("--height", default=768, type=int)
+    parser.add_argument("--width", default=768, type=int)
     parser.add_argument("--num-warmup-runs", default=5, type=int)
     parser.add_argument(
         "--denoising-steps", default=50, type=int, help="Number of inference steps"
@@ -37,7 +37,7 @@ def get_args():
         "--onnx-dir",
         default="./onnx",
         type=str,
-        help="Output directory for ONNX export",
+        help="Directory for ONNX models",
     )
 
     # Pipeline configuration
@@ -58,11 +58,13 @@ def get_args():
     parser.add_argument(
         "--num_images", default=1, type=int, help="Number of images per prompt"
     )
+
     parser.add_argument(
         "--negative-prompt",
-        default=[""],
+        default="",
         help="The negative prompt(s) to guide the image generation.",
     )
+
     parser.add_argument("--guidance-scale", default=7.5, type=float)
     parser.add_argument(
         "--output-dir",
@@ -70,13 +72,17 @@ def get_args():
         help="Output directory for logs and image artifacts",
     )
 
-    parser.add_argument("--use_explicit_profiles", default=1, type=int)
+    parser.add_argument("--disable_dynamic_batch", required=False, action="store_true", help="Generate profiles support only fixed batch size.")
+    parser.set_defaults(disable_dynamic_batch=False)
+
+    parser.add_argument("--dynamic_image_size", required=False, action="store_true", help="Generate profiles support image size from 512x512 to 768x768 in built engine. Note that it could support batch size 1~4")
+    parser.set_defaults(dynamic_image_size=False)
 
     args = parser.parse_args()
 
     # Set prompt sizes
     args.prompt = [args.prompt for _ in range(args.batch_size)]
-    args.negative_prompt = args.negative_prompt * args.batch_size
+    args.negative_prompt =[args.negative_prompt for _ in range(args.batch_size)]
 
     # Set scheduler
     sched_opts = {"num_train_timesteps": 1000, "beta_start": 0.00085, "beta_end": 0.012}
@@ -125,8 +131,7 @@ def run_pipeline(args, clip_sess, unet_sess, vae_sess):
         )
 
         # Scale the initial noise by the standard deviation required by the scheduler
-        latents = latents * args.scheduler.init_noise_sigma
-
+        latents = latents * args.scheduler.init_noise_sigma 
         torch.cuda.synchronize()
         start_time = time.time()
 
@@ -160,7 +165,7 @@ def run_pipeline(args, clip_sess, unet_sess, vae_sess):
             return_tensors="np",
         ).input_ids.astype(np.int32)
 
-        # CLIP text encoder with uncond embeddings
+        # CLIP text encoder with uncond embeddings1
         uncond_input_args = {"input_ids": uncond_input_ids}
         uncond_embeddings = clip_sess.run(None, uncond_input_args)[0]
         uncond_embeddings = to_pt(uncond_embeddings, torch.float32)
@@ -276,73 +281,101 @@ def run_pipeline(args, clip_sess, unet_sess, vae_sess):
             )
             save_image(images, args.output_dir, image_name_prefix)
 
-
 def main():
     args = get_args()
     print(args)
 
+    is_sd_v2 = True
     # Load models and convert to FP16 with first inference passes to reduce latency
     batch_size = args.batch_size
-    min_batch = 1
-    max_batch = 8
-    embed_dim = 768
+    embed_dim = 1024 if is_sd_v2 else 768
     unet_dim = 4
     max_text_len = 77
     latent_height = args.height // 8
     latent_width = args.width // 8
 
-    min_image_shape = 512  # min image resolution: 512x512
-    max_image_shape = 512  # max image resolution: 768x768
-    min_latent_shape = min_image_shape // 8
-    max_latent_shape = max_image_shape // 8
-    min_latent_height = min_latent_shape
-    min_latent_width = min_latent_shape
-    max_latent_height = max_latent_shape
-    max_latent_width = max_latent_shape
-    opt_batch = 1
-    opt_latent_height = 64
-    opt_latent_width = 64
+    dynamic_batch_size = not args.disable_dynamic_batch
+    support_dynamic_image_size = args.dynamic_image_size
+    use_explicit_profiles = dynamic_batch_size or support_dynamic_image_size
 
-    engine_tag = f"opt_{max_batch}_{min_latent_shape}_{max_latent_shape}"
+    min_image_size = 512   # min image resolution: 512x512
+    max_image_size = 1024 if is_sd_v2 else 768  # max image resolution
+
+    if dynamic_batch_size:
+        min_batch = 1
+        if support_dynamic_image_size:
+            max_batch = 4
+        elif  args.height > 512 or args.width > 512:
+            max_batch = 4
+        else:
+            max_batch = 16
+    else:
+        min_batch = batch_size
+        max_batch = batch_size
+
+    min_latent_height = (min_image_size // 8) if support_dynamic_image_size else latent_height
+    min_latent_width = (min_image_size // 8) if support_dynamic_image_size else latent_width
+    max_latent_height = (max_image_size // 8) if support_dynamic_image_size else latent_height
+    max_latent_width = (max_image_size // 8) if support_dynamic_image_size else latent_width
+    opt_batch = 1 if dynamic_batch_size else batch_size
+    opt_latent_height = 64 if support_dynamic_image_size else latent_height
+    opt_latent_width = 64 if support_dynamic_image_size else latent_width
+
+    assert batch_size <= max_batch
+    assert latent_height >= min_latent_height and latent_height <= max_latent_height
+    assert latent_width >= min_latent_width and latent_width <= max_latent_width
+
+    if dynamic_batch_size and support_dynamic_image_size:
+        engine_tag = f"B{min_batch}_{max_batch}_H{min_latent_height}_{max_latent_height}_W{min_latent_width}_{max_latent_width}"
+    elif dynamic_batch_size:
+        engine_tag = f"B{min_batch}_{max_batch}_H{latent_height}_W{latent_width}"
+    else:
+        engine_tag = f"B{batch_size}_H{latent_height}_W{latent_width}"
 
     if args.seed > 0:
         ort.set_default_logger_severity(0)
 
     print("Loading CLIP model.")
 
+    GB = 1073741824
+    onnx_dir = str(args.onnx_dir)
+
     trt_ep_default_options = {
         "device_id": 0,
         "trt_fp16_enable": True,
         "trt_engine_cache_enable": True,
-        "trt_max_workspace_size": 4294967296, # 4 GB
-        #"trt_timing_cache_enable": True,
-        #"trt_detailed_build_log": True,
+        "trt_timing_cache_enable": True,
+        "trt_detailed_build_log": True,
     }
 
-    if args.use_explicit_profiles:
+    if use_explicit_profiles:
         trt_ep_options = {
-            "trt_engine_cache_path": f"./onnx_1.5/clip_ort_engine_{engine_tag}",
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"clip_ort_engine_{min_batch}_{max_batch}"), # image size has no impact on CLIP
             "trt_profile_min_shapes": f"input_ids:{min_batch}x{max_text_len}",
             "trt_profile_max_shapes": f"input_ids:{max_batch}x{max_text_len}",
             "trt_profile_opt_shapes": f"input_ids:{opt_batch}x{max_text_len}",
             "trt_engine_cache_built_with_explicit_profiles": True,
+            "trt_max_workspace_size": 4 * GB
         }
     else:
         trt_ep_options = {
-            "trt_engine_cache_path": f"./onnx_1.5/clip_ort_engine_{batch_size}",
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"clip_ort_engine_{batch_size}"),
+            "trt_max_workspace_size": 4 * GB
         }
 
     trt_ep_options.update(trt_ep_default_options)
+    print("CLIP provider options",  trt_ep_options)
 
     clip_sess = ort.InferenceSession(
-        "./onnx_1.5/clip.opt.onnx",
+        os.path.join(onnx_dir, "clip.opt.onnx"),
         providers=[
             ("TensorrtExecutionProvider", trt_ep_options),
             "CUDAExecutionProvider",
         ],
     )
     clip_sess.run(
-        None, {"input_ids": np.zeros((batch_size, max_text_len), dtype=np.int32)}
+        None,
+       {"input_ids": np.zeros((batch_size, max_text_len), dtype=np.int32)}
     )
 
     print("Loading UNet model.")
@@ -350,25 +383,27 @@ def main():
     #sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_ENABLE_BASIC
     sess_options.graph_optimization_level = ort.GraphOptimizationLevel.ORT_DISABLE_ALL
 
-    if args.use_explicit_profiles:
+    if use_explicit_profiles:
         trt_ep_options = {
-            "trt_engine_cache_path": f"./onnx_1.5/unet_ort_engine_{engine_tag}",
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"unet_ort_engine_{engine_tag}"),
             "trt_profile_min_shapes": f"sample:{2 * min_batch}x{unet_dim}x{min_latent_height}x{min_latent_width},encoder_hidden_states:{2 * min_batch}x{max_text_len}x{embed_dim},timestep:1",
             "trt_profile_max_shapes": f"sample:{2 * max_batch}x{unet_dim}x{max_latent_height}x{max_latent_width},encoder_hidden_states:{2 * max_batch}x{max_text_len}x{embed_dim},timestep:1",
             "trt_profile_opt_shapes": f"sample:{2 * opt_batch}x{unet_dim}x{opt_latent_height}x{opt_latent_width},encoder_hidden_states:{2 * opt_batch}x{max_text_len}x{embed_dim},timestep:1",
             "trt_engine_cache_built_with_explicit_profiles": True,
-            "trt_max_workspace_size": 34359738368  # 32 GB
-
+            "trt_max_workspace_size": 20 * GB
         }
     else:
         trt_ep_options = {
-            "trt_engine_cache_path": f"./onnx_1.5/unet_ort_engine_{batch_size}",
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"unet_ort_engine_{batch_size}"),
+            "trt_max_workspace_size":  20 * GB
         }
 
     trt_ep_options.update(trt_ep_default_options)
 
+    print("UNet provider options", trt_ep_options)
+
     unet_sess = ort.InferenceSession(
-        "./onnx_1.5/unet.opt.onnx",
+        os.path.join(onnx_dir, "unet.opt.onnx"),
         providers=[
             ("TensorrtExecutionProvider", trt_ep_options),
             "CUDAExecutionProvider",
@@ -386,24 +421,28 @@ def main():
     }
     unet_sess.run(None, unet_args)
 
-    if args.use_explicit_profiles:
+    if use_explicit_profiles:
         trt_ep_options = {
-            "trt_engine_cache_path": f"./onnx_1.5/vae_ort_engine_{engine_tag}",
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"vae_ort_engine_{engine_tag}"),
             "trt_profile_min_shapes": f"latent:{min_batch}x{unet_dim}x{min_latent_height}x{min_latent_width}",
             "trt_profile_max_shapes": f"latent:{max_batch}x{unet_dim}x{max_latent_height}x{max_latent_width}",
             "trt_profile_opt_shapes": f"latent:{opt_batch}x{unet_dim}x{opt_latent_height}x{opt_latent_width}",
             "trt_engine_cache_built_with_explicit_profiles": True,
+            "trt_max_workspace_size": 20 * GB
         }
     else:
         trt_ep_options = {
-            "trt_engine_cache_path": f"./onnx_1.5/vae_ort_engine_{batch_size}",
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"vae_ort_engine_{batch_size}"),
+            "trt_max_workspace_size": 20 * GB
         }
 
     trt_ep_options.update(trt_ep_default_options)
 
+    print("VAE provider options", trt_ep_options)
+
     print("Loading VAE model.")
     vae_sess = ort.InferenceSession(
-        "./onnx_1.5/vae.opt.onnx",
+        os.path.join(onnx_dir, "vae.opt.onnx"),
         sess_options,
         providers=[
             ("TensorrtExecutionProvider", trt_ep_options),
@@ -430,13 +469,19 @@ def main():
 
     # Measure each batch size
     init_prompt = args.prompt[0]
-    init_negative_prompt = args.negative_prompt[:1]
-    for bs in [args.batch_size]:
+    init_negative_prompt = args.negative_prompt[0]
+
+    batch_sizes = [1, 4, 8, 16]
+    for bs in batch_sizes:
+        if bs < min_batch or bs > max_batch:
+            continue
+
         # args.batch_size = bs
         print(f"\nBatch size = {bs}\n")
 
-        args.prompt = [init_prompt for _ in range(args.batch_size)]
-        args.negative_prompt = init_negative_prompt * args.batch_size
+        args.batch_size = bs
+        args.prompt = [init_prompt for _ in range(bs)]
+        args.negative_prompt = [init_negative_prompt for _ in range(bs)] 
 
         # Measure latency
         print("Measuring latency.")
