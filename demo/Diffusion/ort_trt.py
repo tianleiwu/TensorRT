@@ -26,8 +26,8 @@ def get_args():
         help="Text prompt(s) to guide image generation",
     )
     parser.add_argument("--batch-size", default=1, type=int)
-    parser.add_argument("--height", default=768, type=int)
-    parser.add_argument("--width", default=768, type=int)
+    parser.add_argument("--height", default=512, type=int)
+    parser.add_argument("--width", default=512, type=int)
     parser.add_argument("--num-warmup-runs", default=5, type=int)
     parser.add_argument(
         "--denoising-steps", default=50, type=int, help="Number of inference steps"
@@ -350,16 +350,16 @@ def main():
 
     if use_explicit_profiles:
         trt_ep_options = {
-            "trt_engine_cache_path": os.path.join(onnx_dir, f"clip_ort_engine_{min_batch}_{max_batch}"), # image size has no impact on CLIP
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"clip_engine_{min_batch}_{max_batch}"), # image size has no impact on CLIP
             "trt_profile_min_shapes": f"input_ids:{min_batch}x{max_text_len}",
             "trt_profile_max_shapes": f"input_ids:{max_batch}x{max_text_len}",
             "trt_profile_opt_shapes": f"input_ids:{opt_batch}x{max_text_len}",
-            "trt_engine_cache_built_with_explicit_profiles": True,
+            #"trt_engine_cache_built_with_explicit_profiles": True,
             "trt_max_workspace_size": 4 * GB
         }
     else:
         trt_ep_options = {
-            "trt_engine_cache_path": os.path.join(onnx_dir, f"clip_ort_engine_{batch_size}"),
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"clip_engine_{batch_size}"),
             "trt_max_workspace_size": 4 * GB
         }
 
@@ -385,16 +385,16 @@ def main():
 
     if use_explicit_profiles:
         trt_ep_options = {
-            "trt_engine_cache_path": os.path.join(onnx_dir, f"unet_ort_engine_{engine_tag}"),
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"unet_engine_{engine_tag}"),
             "trt_profile_min_shapes": f"sample:{2 * min_batch}x{unet_dim}x{min_latent_height}x{min_latent_width},encoder_hidden_states:{2 * min_batch}x{max_text_len}x{embed_dim},timestep:1",
             "trt_profile_max_shapes": f"sample:{2 * max_batch}x{unet_dim}x{max_latent_height}x{max_latent_width},encoder_hidden_states:{2 * max_batch}x{max_text_len}x{embed_dim},timestep:1",
             "trt_profile_opt_shapes": f"sample:{2 * opt_batch}x{unet_dim}x{opt_latent_height}x{opt_latent_width},encoder_hidden_states:{2 * opt_batch}x{max_text_len}x{embed_dim},timestep:1",
-            "trt_engine_cache_built_with_explicit_profiles": True,
+            #"trt_engine_cache_built_with_explicit_profiles": True,
             "trt_max_workspace_size": 20 * GB
         }
     else:
         trt_ep_options = {
-            "trt_engine_cache_path": os.path.join(onnx_dir, f"unet_ort_engine_{batch_size}"),
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"unet_engine_{batch_size}"),
             "trt_max_workspace_size":  20 * GB
         }
 
@@ -423,16 +423,16 @@ def main():
 
     if use_explicit_profiles:
         trt_ep_options = {
-            "trt_engine_cache_path": os.path.join(onnx_dir, f"vae_ort_engine_{engine_tag}"),
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"vae_engine_{engine_tag}"),
             "trt_profile_min_shapes": f"latent:{min_batch}x{unet_dim}x{min_latent_height}x{min_latent_width}",
             "trt_profile_max_shapes": f"latent:{max_batch}x{unet_dim}x{max_latent_height}x{max_latent_width}",
             "trt_profile_opt_shapes": f"latent:{opt_batch}x{unet_dim}x{opt_latent_height}x{opt_latent_width}",
-            "trt_engine_cache_built_with_explicit_profiles": True,
+            #"trt_engine_cache_built_with_explicit_profiles": True,
             "trt_max_workspace_size": 20 * GB
         }
     else:
         trt_ep_options = {
-            "trt_engine_cache_path": os.path.join(onnx_dir, f"vae_ort_engine_{batch_size}"),
+            "trt_engine_cache_path": os.path.join(onnx_dir, f"vae_engine_{batch_size}"),
             "trt_max_workspace_size": 20 * GB
         }
 
